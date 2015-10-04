@@ -1,6 +1,5 @@
 package jp.memorylovers.amazon.paapi4j.response;
 
-import com.sun.istack.internal.Nullable;
 import jp.memorylovers.amazon.paapi4j.request.Request;
 import jp.memorylovers.amazon.paapi4j.request.SignedRequestsHelper;
 import org.simpleframework.xml.core.Persister;
@@ -14,7 +13,6 @@ public class ResponseHelper {
     private ResponseHelper() {
     }
 
-    @Nullable
     public static Response getResponse(String requestUrl) {
         try (InputStreamReader ir = new InputStreamReader(
                 new URL(requestUrl).openConnection().getInputStream())
@@ -26,7 +24,6 @@ public class ResponseHelper {
         }
     }
 
-    @Nullable
     public static Response getResponse(Request request) {
         try {
             String requestUrl = SignedRequestsHelper.getInstance(request.getSecretKey()).sign(request);
