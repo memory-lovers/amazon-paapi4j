@@ -16,6 +16,9 @@ public class Response {
     @Getter
     @Setter
     public Request request;
+    @Getter
+    @Setter
+    public String requestUrl;
 
     @Element(name = "Items")
     public Items items;

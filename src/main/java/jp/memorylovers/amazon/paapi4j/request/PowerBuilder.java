@@ -83,7 +83,7 @@ public class PowerBuilder {
     }
 
     public PowerCond pubdateDuring(int year, int month) {
-        return new PowerCond(PUBDATE, AFTER + " " + String.valueOf(month) + "-" + String.valueOf(year));
+        return new PowerCond(PUBDATE, DURING + " " + String.valueOf(month) + "-" + String.valueOf(year));
     }
 
     public PowerCond publisher(String publisher) {

@@ -30,6 +30,7 @@ public class ResponseHelper {
             Response response = getResponse(requestUrl);
             if (response != null) {
                 response.setRequest(request);
+                response.setRequestUrl(requestUrl);
                 return response;
             }
         } catch (Exception e) {
