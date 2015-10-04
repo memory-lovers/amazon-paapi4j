@@ -27,6 +27,10 @@ public class Items {
     }
 
     private String toString(List list) {
+        if (list == null) {
+            return "";
+        }
+        
         StringBuilder sb = new StringBuilder();
         Iterator iterator = list.iterator();
         while (iterator.hasNext()) {

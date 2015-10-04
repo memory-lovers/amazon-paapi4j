@@ -3,7 +3,6 @@ package jp.memorylovers.amazon.paapi4j.request;
 import jp.memorylovers.amazon.paapi4j.enums.ContentType;
 import jp.memorylovers.amazon.paapi4j.enums.EndPoint;
 import lombok.Getter;
-import lombok.Setter;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -14,20 +13,16 @@ import java.util.TimeZone;
 
 import static jp.memorylovers.amazon.paapi4j.enums.EndPoint.ENDPOINT_JP;
 
+@Getter
 public abstract class Request {
     protected final static String SERVICE = "AWSECommerceService";
-    @Getter
+
     protected String awsAccessKeyId;
-    @Getter
     protected String secretKey;
-    @Getter
     protected EndPoint endPoint = ENDPOINT_JP;
-    @Setter
     protected String associateTag = "toshokan06a-22";
     protected ContentType contentType = ContentType.TEXT_XML;
-    @Setter
     protected String merchantId = "Amazon";
-    @Setter
     protected boolean validate = false;
     protected String version = "2013-08-01";
 
@@ -49,6 +44,7 @@ public abstract class Request {
         if (associateTag != null) params.put("AssociateTag", associateTag);
         params.put("MerchantId", merchantId);
         params.put("Timestamp", timestamp());
+        params.put("Validate", validate ? "True" : "False");
         params.put("AWSAccessKeyId", awsAccessKeyId);
         return setParams(params);
     }

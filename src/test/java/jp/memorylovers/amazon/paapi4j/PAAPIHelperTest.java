@@ -1,7 +1,5 @@
 package jp.memorylovers.amazon.paapi4j;
 
-import jp.memorylovers.amazon.paapi4j.enums.ResponseGroup;
-import jp.memorylovers.amazon.paapi4j.request.RequestBuilder;
 import jp.memorylovers.amazon.paapi4j.request.RequestItemSearch;
 import jp.memorylovers.amazon.paapi4j.request.SignedRequestsHelper;
 import jp.memorylovers.amazon.paapi4j.response.Response;
@@ -11,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static jp.memorylovers.amazon.paapi4j.enums.EndPoint.ENDPOINT_JP;
+import static jp.memorylovers.amazon.paapi4j.enums.ResponseGroup.MEDIUM;
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.fail;
 
@@ -25,9 +24,13 @@ public class PAAPIHelperTest extends AbstractTest {
 
     @Test
     public void test2() {
-        RequestItemSearch request = RequestBuilder.builderItemSearch(ENDPOINT_JP, secretKey, accessKey);
-        request.setResponseGroup(ResponseGroup.MEDIUM);
-        request.setPublisher("集英社");
+        RequestItemSearch request = RequestItemSearch
+                .builder(ENDPOINT_JP, secretKey, accessKey)
+                .browseNode(2278488051L)
+                .responseGroup(MEDIUM)
+                .publisher("集英社")
+                .validate(false)
+                .build();
 
         try {
             String requestUrl = SignedRequestsHelper.getInstance(request.getSecretKey()).sign(request);
