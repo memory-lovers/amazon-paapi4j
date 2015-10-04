@@ -56,7 +56,7 @@ public class SignedRequestsHelper {
     public String sign(Request request) {
         // The parameters need to be processed in lexicographical order, so we'll
         // use a TreeMap implementation for that.
-        SortedMap<String, String> sortedParamMap = new TreeMap<>(request.build());
+        SortedMap<String, String> sortedParamMap = new TreeMap<>(request.getParamsMap());
 
         // get the canonical form the query string
         String canonicalQS = this.canonicalize(sortedParamMap);

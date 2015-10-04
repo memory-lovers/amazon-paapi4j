@@ -41,7 +41,7 @@ public abstract class Request {
         this.endPoint = endPoint;
     }
 
-    public Map<String, String> build() {
+    public Map<String, String> getParamsMap() {
         Map<String, String> params = new HashMap<>();
         params.put("Service", SERVICE);
         params.put("Version", version);
@@ -50,10 +50,10 @@ public abstract class Request {
         params.put("MerchantId", merchantId);
         params.put("Timestamp", timestamp());
         params.put("AWSAccessKeyId", awsAccessKeyId);
-        return buildParams(params);
+        return setParams(params);
     }
 
-    protected abstract Map<String, String> buildParams(Map<String, String> params);
+    protected abstract Map<String, String> setParams(Map<String, String> params);
 
     protected abstract String operation();
 

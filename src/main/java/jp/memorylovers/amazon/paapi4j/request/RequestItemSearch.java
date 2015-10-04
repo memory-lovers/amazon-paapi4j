@@ -34,7 +34,7 @@ public class RequestItemSearch extends Request {
     }
 
     @Override
-    protected Map<String, String> buildParams(Map<String, String> params) {
+    protected Map<String, String> setParams(Map<String, String> params) {
         if (author != null) params.put("Author", author);
         if (browseNode != null) params.put("BrowseNode", browseNode.toString());
         params.put("Condition", condition.toString());
