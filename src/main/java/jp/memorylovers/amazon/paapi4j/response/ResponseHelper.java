@@ -19,14 +19,16 @@ public class ResponseHelper {
         ) {
             return new Persister().read(Response.class, ir, false);
         } catch (Exception e) {
+            System.err.println("URL:" + requestUrl);
             e.printStackTrace();
             return null;
         }
     }
 
     public static Response getResponse(Request request) {
+        String requestUrl = null;
         try {
-            String requestUrl = SignedRequestsHelper.getInstance(request.getSecretKey()).sign(request);
+            requestUrl = SignedRequestsHelper.getInstance(request.getSecretKey()).sign(request);
             Response response = getResponse(requestUrl);
             if (response != null) {
                 response.setRequest(request);
@@ -34,6 +36,7 @@ public class ResponseHelper {
                 return response;
             }
         } catch (Exception e) {
+            if (requestUrl != null) System.err.println("URL:" + requestUrl);
             e.printStackTrace();
         }
 

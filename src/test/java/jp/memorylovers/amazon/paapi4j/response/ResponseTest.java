@@ -16,15 +16,25 @@ public class ResponseTest {
 
     @Test
     public void testItemSearchMedium() {
-        assertFile("ItemSearch_2015-10-04_13-17-12.xml");
+        assertFile("ItemSearch_2015-10-04_13-17-12.xml", true);
     }
 
-    private void assertFile(String fileName) {
+    @Test
+    public void testItemSearchMedium2() {
+        assertFile("ItemSearch_2015-10-04_13-36-35.xml", false);
+    }
+
+    @Test
+    public void testItemSearchMediumDoubleAuthor() {
+        assertFile("ItemSearch_2015-10-04_13-46-53.xml", true);
+    }
+
+    private void assertFile(String fileName, boolean isPrint) {
         try (InputStreamReader ir = new InputStreamReader(new FileInputStream(new File(ROOT_DIR + fileName)))
         ) {
             Response response = new Persister().read(Response.class, ir, false);
             assertNotNull(response);
-            System.out.println(response);
+            if (isPrint) System.out.println(response);
         } catch (Exception e) {
             e.printStackTrace();
             fail();

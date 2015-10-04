@@ -1,12 +1,13 @@
 package jp.memorylovers.amazon.paapi4j.response;
 
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 
-import java.util.Date;
+import java.util.List;
 
 public class ItemAttributes {
-    @Element(name = "Author", required = false)
-    public String author;
+    @ElementList(entry = "Author", required = false, inline = true)
+    public List<String> author;
     @Element(name = "Binding", required = false)
     public String binding;
     @Element(name = "EAN", required = false)
@@ -20,11 +21,11 @@ public class ItemAttributes {
     @Element(name = "ProductGroup", required = false)
     public String productGroup;
     @Element(name = "PublicationDate", required = false)
-    public Date publicationDate;
+    public String publicationDate;
     @Element(name = "Publisher", required = false)
     public String publisher;
     @Element(name = "ReleaseDate", required = false)
-    public Date releaseDate;
+    public String releaseDate;
 
     @Element(name = "Title", required = false)
     public String title;
