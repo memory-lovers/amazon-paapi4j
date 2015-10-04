@@ -116,6 +116,11 @@ public class RequestItemSearch extends Request {
             return this;
         }
 
+        public Builder power(PowerBuilder.IPowerCond power) {
+            this.request.power = power.toString();
+            return this;
+        }
+
         public Builder publisher(String publisher) {
             this.request.publisher = publisher;
             return this;

@@ -1,5 +1,7 @@
 package jp.memorylovers.amazon.paapi4j;
 
+import jp.memorylovers.amazon.paapi4j.request.PowerBuilder;
+import jp.memorylovers.amazon.paapi4j.request.Request;
 import jp.memorylovers.amazon.paapi4j.request.RequestItemSearch;
 import jp.memorylovers.amazon.paapi4j.request.SignedRequestsHelper;
 import jp.memorylovers.amazon.paapi4j.response.Response;
@@ -30,20 +32,7 @@ public class PAAPIHelperTest extends AbstractTest {
                 .responseGroup(MEDIUM)
                 .publisher("集英社")
                 .build();
-
-        try {
-            String requestUrl = SignedRequestsHelper.getInstance(request.getSecretKey()).sign(request);
-            System.out.println("url: " + requestUrl);
-//            ResponseHelper.response(requestUrl);
-            Response response = ResponseHelper.getResponse(requestUrl);
-            response.setRequest(request);
-            assertNotNull(response);
-            System.out.println(response.toString());
-        } catch (Exception e) {
-            System.err.println(e.getLocalizedMessage());
-            e.printStackTrace();
-            fail();
-        }
+        assertResult(request);
     }
 
     @Test
@@ -55,11 +44,26 @@ public class PAAPIHelperTest extends AbstractTest {
                 .responseGroup(MEDIUM)
                 .publisher("ああああ")
                 .build();
+        assertResult(request);
+    }
 
+    @Test
+    public void testPowerBuilder() {
+        PowerBuilder builder = PowerBuilder.builder();
+        RequestItemSearch request = RequestItemSearch
+                .builder(ENDPOINT_JP, secretKey, accessKey)
+                .browseNode(2278488051L)
+                .responseGroup(MEDIUM)
+                .publisher("集英社")
+                .power(builder.pubdateAfter(2015))
+                .build();
+        assertResult(request);
+    }
+
+    private void assertResult(Request request) {
         try {
             String requestUrl = SignedRequestsHelper.getInstance(request.getSecretKey()).sign(request);
             System.out.println("url: " + requestUrl);
-//            ResponseHelper.response(requestUrl);
             Response response = ResponseHelper.getResponse(requestUrl);
             response.setRequest(request);
             assertNotNull(response);
