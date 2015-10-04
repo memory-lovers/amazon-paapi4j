@@ -1,6 +1,5 @@
 package jp.memorylovers.amazon.paapi4j.request;
 
-import jp.memorylovers.amazon.paapi4j.enums.ContentType;
 import jp.memorylovers.amazon.paapi4j.enums.EndPoint;
 import lombok.Getter;
 
@@ -16,6 +15,7 @@ import static jp.memorylovers.amazon.paapi4j.enums.EndPoint.ENDPOINT_JP;
 /**
  * Model of Common Request Parameter.<br/>
  * represent for {@see <a href="https://images-na.ssl-images-amazon.com/images/G/09/associates/paapi/dg/index.html?rw_useCurrentProtocol=1">共通のリクエストパラメータ</a>}
+ * unsupported for 'ContentType','Style', 'XMLEscaping'
  */
 @Getter
 public abstract class Request {
@@ -25,8 +25,7 @@ public abstract class Request {
     protected String secretKey;
     protected EndPoint endPoint = ENDPOINT_JP;
     protected String associateTag = "toshokan06a-22";
-    protected ContentType contentType = ContentType.TEXT_XML;
-    protected String merchantId = "Amazon";
+    protected String merchantId;
     protected boolean validate = false;
     protected String version = "2013-08-01";
 
@@ -46,7 +45,7 @@ public abstract class Request {
         params.put("Version", version);
         params.put("Operation", operation());
         if (associateTag != null) params.put("AssociateTag", associateTag);
-        params.put("MerchantId", merchantId);
+        if (merchantId != null) params.put("MerchantId", merchantId);
         params.put("Timestamp", timestamp());
         params.put("Validate", validate ? "True" : "False");
         params.put("AWSAccessKeyId", awsAccessKeyId);
