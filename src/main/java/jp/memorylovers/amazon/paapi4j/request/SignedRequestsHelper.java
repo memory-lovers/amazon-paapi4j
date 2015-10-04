@@ -52,6 +52,9 @@ public class SignedRequestsHelper {
      * be used to fetch the response. The URL returned should not be modified in
      * any way, doing so will invalidate the signature and Amazon will reject
      * the request.
+     *
+     * @param request Request @see Request
+     * @return Request URL
      */
     public String sign(Request request) {
         // The parameters need to be processed in lexicographical order, so we'll

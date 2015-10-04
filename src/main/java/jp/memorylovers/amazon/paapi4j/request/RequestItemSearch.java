@@ -7,10 +7,15 @@ import lombok.Getter;
 
 import java.util.Map;
 
+/**
+ * PAAPI Request parameters for ItemSearch operation<br>
+ * Unsupported for 'Actor', 'Artist', 'AudienceRating', 'Brand', 'City', 'Composer', 'Conductor', 'Director', 'MusicLabel', 'Neighborhood', 'Orchestra', 'TextStream'
+ *
+ * @see <a href="https://images-na.ssl-images-amazon.com/images/G/09/associates/paapi/dg/ItemSearch.html">ItemSearch</a>
+ */
 @Getter
 public class RequestItemSearch extends Request {
     private String author = null;
-    //    private String availability; //有効な値: Available
     private Long browseNode = null;
     private Condition condition = Condition.NEW;
     private ResponseGroup responseGroup = ResponseGroup.SMALL;
