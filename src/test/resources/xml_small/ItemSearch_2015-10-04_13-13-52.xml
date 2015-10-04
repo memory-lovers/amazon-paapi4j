@@ -1,0 +1,421 @@
+<?xml version="1.0" ?>
+<ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01">
+    <OperationRequest>
+        <HTTPHeaders>
+            <Header Name="UserAgent"
+                    Value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"></Header>
+        </HTTPHeaders>
+        <RequestId>59eea862-419c-4053-9c99-3fae17e43ac2</RequestId>
+        <Arguments>
+            <Argument Name="AWSAccessKeyId" Value="AKIAIF2O5K3NZBYBHA4A"></Argument>
+            <Argument Name="AssociateTag" Value="toshokan06a-22"></Argument>
+            <Argument Name="Condition" Value="New"></Argument>
+            <Argument Name="ItemPage" Value="1"></Argument>
+            <Argument Name="Operation" Value="ItemSearch"></Argument>
+            <Argument Name="Power" Value="pubdate: after 9-2015"></Argument>
+            <Argument Name="Publisher" Value="集英社"></Argument>
+            <Argument Name="ResponseGroup" Value="Small"></Argument>
+            <Argument Name="SearchIndex" Value="Books"></Argument>
+            <Argument Name="Service" Value="AWSECommerceService"></Argument>
+            <Argument Name="Timestamp" Value="2015-10-04T13:13:52Z"></Argument>
+            <Argument Name="Validate" Value="False"></Argument>
+            <Argument Name="Version" Value="2013-08-01"></Argument>
+            <Argument Name="Signature" Value="bbJr6Gr1BSdr1dJKYMOQyI/25DqBldxiIxpKgQv7jrw="></Argument>
+        </Arguments>
+        <RequestProcessingTime>0.0397884770000000</RequestProcessingTime>
+    </OperationRequest>
+    <Items>
+        <Request>
+            <IsValid>True</IsValid>
+            <ItemSearchRequest>
+                <Condition>New</Condition>
+                <ItemPage>1</ItemPage>
+                <Power>pubdate: after 9-2015</Power>
+                <Publisher>集英社</Publisher>
+                <ResponseGroup>Small</ResponseGroup>
+                <SearchIndex>Books</SearchIndex>
+            </ItemSearchRequest>
+        </Request>
+        <TotalResults>289</TotalResults>
+        <TotalPages>29</TotalPages>
+        <MoreSearchResultsUrl>http://www.amazon.co.jp/gp/redirect.html?linkCode=xm2&amp;SubscriptionId=AKIAIF2O5K3NZBYBHA4A&amp;location=http%3A%2F%2Fwww.amazon.co.jp%2Fgp%2Fsearch%3Fkeywords%3D%25E9%259B%2586%25E8%258B%25B1%25E7%25A4%25BE%26url%3Dsearch-alias%253Dbooks-single-index&amp;tag=toshokan06a-22&amp;creative=5143&amp;camp=2025</MoreSearchResultsUrl>
+        <Item>
+            <ASIN>4089082579</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E3%80%8E%E6%9D%B1%E4%BA%AC%E5%96%B0%E7%A8%AE%E3%80%8F%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%96-%E7%9F%B3%E7%94%B0-%E3%82%B9%E3%82%A4/dp/4089082579%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4089082579
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4089082579%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082579
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4089082579%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082579
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4089082579%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082579
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4089082579%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082579
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <ItemAttributes>
+                <Author>石田　スイ</Author>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>Book</ProductGroup>
+                <Title>『東京喰種』コミックカレンダー　２０１６</Title>
+            </ItemAttributes>
+        </Item>
+        <Item>
+            <ASIN>4088804961</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/ONE-PIECE-79-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E6%A0%84%E4%B8%80%E9%83%8E/dp/4088804961%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4088804961
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4088804961%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804961
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4088804961%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804961
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4088804961%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804961
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4088804961%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804961
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <ItemAttributes>
+                <Author>尾田 栄一郎</Author>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>Book</ProductGroup>
+                <Title>ONE PIECE 79 (ジャンプコミックス)</Title>
+            </ItemAttributes>
+        </Item>
+        <Item>
+            <ASIN>B0156098D8</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/ONE-PIECE-%E3%83%A2%E3%83%8E%E3%82%AF%E3%83%AD%E7%89%88-79-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9DIGITAL-ebook/dp/B0156098D8%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0156098D8
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0156098D8%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098D8
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/B0156098D8%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098D8
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/B0156098D8%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098D8
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/B0156098D8%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098D8
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <ItemAttributes>
+                <Author>尾田栄一郎</Author>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>eBooks</ProductGroup>
+                <Title>ONE PIECE モノクロ版 79 (ジャンプコミックスDIGITAL)</Title>
+            </ItemAttributes>
+        </Item>
+        <Item>
+            <ASIN>B015WPUKX4</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/BAILA-%E3%83%90%E3%82%A4%E3%83%A9-2015%E5%B9%B4-11-%E6%9C%88%E5%8F%B7/dp/B015WPUKX4%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB015WPUKX4
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3DB015WPUKX4%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB015WPUKX4
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/B015WPUKX4%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB015WPUKX4
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/B015WPUKX4%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB015WPUKX4
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/B015WPUKX4%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB015WPUKX4
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <ItemAttributes>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>Book</ProductGroup>
+                <Title>BAILA(バイラ) 2015年 11 月号 [雑誌]</Title>
+            </ItemAttributes>
+        </Item>
+        <Item>
+            <ASIN>4089082587</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%EF%BC%B4%EF%BD%8F-%EF%BC%AC%EF%BC%AF%EF%BC%B6%EF%BC%A5%E3%82%8B%EF%BC%8D%E3%81%A8%E3%82%89%E3%81%B6%E3%82%8B%EF%BC%8D%E3%83%80%E3%83%BC%E3%82%AF%E3%83%8D%E3%82%B9%E7%AC%AC%EF%BC%91%EF%BC%95%E5%B7%BB%E3%82%A2%E3%83%8B%E3%83%A1%EF%BC%A4%EF%BC%B6%EF%BC%A4%E4%BB%98%E4%BA%88%E7%B4%84%E9%99%90%E5%AE%9A%E7%89%88-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9/dp/4089082587%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4089082587
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4089082587%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082587
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4089082587%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082587
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4089082587%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082587
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4089082587%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082587
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <ItemAttributes>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>Book</ProductGroup>
+                <Title>Ｔｏ　ＬＯＶＥる－とらぶる－ダークネス第１５巻アニメＤＶＤ付予約限定版 (ジャンプコミックス)</Title>
+            </ItemAttributes>
+        </Item>
+        <Item>
+            <ASIN>B01560988S</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E3%83%8F%E3%82%A4%E3%82%AD%E3%83%A5%E3%83%BC-18-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9DIGITAL-%E5%8F%A4%E8%88%98%E6%98%A5%E4%B8%80-ebook/dp/B01560988S%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01560988S
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3DB01560988S%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB01560988S
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/B01560988S%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB01560988S
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/B01560988S%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB01560988S
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/B01560988S%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB01560988S
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <ItemAttributes>
+                <Author>古舘春一</Author>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>eBooks</ProductGroup>
+                <Title>ハイキュー!! 18 (ジャンプコミックスDIGITAL)</Title>
+            </ItemAttributes>
+        </Item>
+        <Item>
+            <ASIN>4088804848</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E3%83%8F%E3%82%A4%E3%82%AD%E3%83%A5%E3%83%BC-18-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E5%8F%A4%E8%88%98-%E6%98%A5%E4%B8%80/dp/4088804848%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4088804848
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4088804848%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804848
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4088804848%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804848
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4088804848%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804848
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4088804848%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804848
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <ItemAttributes>
+                <Author>古舘 春一</Author>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>Book</ProductGroup>
+                <Title>ハイキュー!! 18 (ジャンプコミックス)</Title>
+            </ItemAttributes>
+        </Item>
+        <Item>
+            <ASIN>B0156098AG</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E6%9A%97%E6%AE%BA%E6%95%99%E5%AE%A4-16-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9DIGITAL-%E6%9D%BE%E4%BA%95%E5%84%AA%E5%BE%81-ebook/dp/B0156098AG%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0156098AG
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0156098AG%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098AG
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/B0156098AG%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098AG
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/B0156098AG%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098AG
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/B0156098AG%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098AG
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <ItemAttributes>
+                <Author>松井優征</Author>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>eBooks</ProductGroup>
+                <Title>暗殺教室 16 (ジャンプコミックスDIGITAL)</Title>
+            </ItemAttributes>
+        </Item>
+        <Item>
+            <ASIN>4088804856</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E6%9A%97%E6%AE%BA%E6%95%99%E5%AE%A4-16-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E6%9D%BE%E4%BA%95-%E5%84%AA%E5%BE%81/dp/4088804856%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4088804856
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4088804856%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804856
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4088804856%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804856
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4088804856%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804856
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4088804856%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804856
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <ItemAttributes>
+                <Author>松井 優征</Author>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>Book</ProductGroup>
+                <Title>暗殺教室 16 (ジャンプコミックス)</Title>
+            </ItemAttributes>
+        </Item>
+        <Item>
+            <ASIN>4088902777</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0-40-%E3%83%A4%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E5%8E%9F-%E6%B3%B0%E4%B9%85/dp/4088902777%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4088902777
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4088902777%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088902777
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4088902777%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088902777
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4088902777%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088902777
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4088902777%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088902777
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <ItemAttributes>
+                <Author>原 泰久</Author>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>Book</ProductGroup>
+                <Title>キングダム 40 (ヤングジャンプコミックス)</Title>
+            </ItemAttributes>
+        </Item>
+    </Items>
+</ItemSearchResponse>
