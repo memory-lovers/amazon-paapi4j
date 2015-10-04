@@ -2,9 +2,11 @@ package jp.memorylovers.amazon.paapi4j.response;
 
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
+import org.simpleframework.xml.Path;
 
 import java.util.Iterator;
 import java.util.List;
+
 
 public class Items {
     @Element(name = "TotalResults", required = false)
@@ -16,12 +18,17 @@ public class Items {
     @ElementList(entry = "Item", inline = true, required = false)
     public List<Item> itemList;
 
+    @Path("Request/Errors")
+    @Element(name = "Error", required = false)
+    public Error error;
+
     @Override
     public String toString() {
         return "\tItems{\n" +
                 "\t\ttotalResults               = " + totalResults + ",\n" +
                 "\t\ttotalPages                 = " + totalPages + ",\n" +
                 "\t\tmoreSearchResultUrl        = '" + moreSearchResultUrl + "\',\n" +
+                "\t\terror                      = " + error + ",\n" +
                 toString(itemList) + "\n" +
                 "\t}";
     }
@@ -30,7 +37,7 @@ public class Items {
         if (list == null) {
             return "";
         }
-        
+
         StringBuilder sb = new StringBuilder();
         Iterator iterator = list.iterator();
         while (iterator.hasNext()) {
@@ -41,4 +48,5 @@ public class Items {
         }
         return sb.toString();
     }
+
 }

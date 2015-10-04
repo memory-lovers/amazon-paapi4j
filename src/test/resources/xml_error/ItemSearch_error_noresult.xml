@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01">
+    <OperationRequest>
+        <HTTPHeaders>
+            <Header Name="UserAgent"
+                    Value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"></Header>
+        </HTTPHeaders>
+        <RequestId>354a5430-7100-42b7-91aa-6f96cbbfacd1</RequestId>
+        <Arguments>
+            <Argument Name="AWSAccessKeyId" Value="AKIAIF2O5K3NZBYBHA4A"></Argument>
+            <Argument Name="AssociateTag" Value="toshokan06a-22"></Argument>
+            <Argument Name="Author" Value="Author"></Argument>
+            <Argument Name="BrowseNode" Value="2278488051"></Argument>
+            <Argument Name="Condition" Value="New"></Argument>
+            <Argument Name="Operation" Value="ItemSearch"></Argument>
+            <Argument Name="Publisher" Value="ああああ"></Argument>
+            <Argument Name="ResponseGroup" Value="Medium"></Argument>
+            <Argument Name="SearchIndex" Value="Books"></Argument>
+            <Argument Name="Service" Value="AWSECommerceService"></Argument>
+            <Argument Name="Timestamp" Value="2015-10-04T07:55:29Z"></Argument>
+            <Argument Name="Validate" Value="False"></Argument>
+            <Argument Name="Version" Value="2013-08-01"></Argument>
+            <Argument Name="Signature" Value="rDJ6/kcTIn9/gJgB6Pcx0FQLbmwK8ak2JHOKMObHW60="></Argument>
+        </Arguments>
+        <RequestProcessingTime>0.0168542080000000</RequestProcessingTime>
+    </OperationRequest>
+    <Items>
+        <Request>
+            <IsValid>True</IsValid>
+            <ItemSearchRequest>
+                <Author>Author</Author>
+                <BrowseNode>2278488051</BrowseNode>
+                <Condition>New</Condition>
+                <Publisher>ああああ</Publisher>
+                <ResponseGroup>Medium</ResponseGroup>
+                <SearchIndex>Books</SearchIndex>
+            </ItemSearchRequest>
+            <Errors>
+                <Error>
+                    <Code>AWS.ECommerceService.NoExactMatches</Code>
+                    <Message>リクエストに該当する結果がありません。</Message>
+                </Error>
+            </Errors>
+        </Request>
+        <TotalResults>0</TotalResults>
+        <TotalPages>0</TotalPages>
+        <MoreSearchResultsUrl>http://www.amazon.co.jp/gp/redirect.html?linkCode=xm2&amp;SubscriptionId=AKIAIF2O5K3NZBYBHA4A&amp;location=http%3A%2F%2Fwww.amazon.co.jp%2Fgp%2Fsearch%3Fnode%3D2278488051%26keywords%3DAuthor%2B%25E3%2581%2582%25E3%2581%2582%25E3%2581%2582%25E3%2581%2582%26url%3Dsearch-alias%253Dbooks-single-index&amp;tag=toshokan06a-22&amp;creative=5143&amp;camp=2025</MoreSearchResultsUrl>
+    </Items>
+</ItemSearchResponse>

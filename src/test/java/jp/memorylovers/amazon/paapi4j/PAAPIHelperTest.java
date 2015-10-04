@@ -23,13 +23,37 @@ public class PAAPIHelperTest extends AbstractTest {
     }
 
     @Test
-    public void test2() {
+    public void test() {
         RequestItemSearch request = RequestItemSearch
                 .builder(ENDPOINT_JP, secretKey, accessKey)
                 .browseNode(2278488051L)
                 .responseGroup(MEDIUM)
                 .publisher("集英社")
-                .validate(false)
+                .build();
+
+        try {
+            String requestUrl = SignedRequestsHelper.getInstance(request.getSecretKey()).sign(request);
+            System.out.println("url: " + requestUrl);
+//            ResponseHelper.response(requestUrl);
+            Response response = ResponseHelper.getResponse(requestUrl);
+            response.setRequest(request);
+            assertNotNull(response);
+            System.out.println(response.toString());
+        } catch (Exception e) {
+            System.err.println(e.getLocalizedMessage());
+            e.printStackTrace();
+            fail();
+        }
+    }
+
+    @Test
+    public void testErrorNoResult() {
+        RequestItemSearch request = RequestItemSearch
+                .builder(ENDPOINT_JP, secretKey, accessKey)
+                .browseNode(2278488051L)
+                .author("Author")
+                .responseGroup(MEDIUM)
+                .publisher("ああああ")
                 .build();
 
         try {
