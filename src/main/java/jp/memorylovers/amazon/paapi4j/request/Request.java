@@ -13,6 +13,10 @@ import java.util.TimeZone;
 
 import static jp.memorylovers.amazon.paapi4j.enums.EndPoint.ENDPOINT_JP;
 
+/**
+ * Model of Common Request Parameter.<br/>
+ * represent for {@see <a href="https://images-na.ssl-images-amazon.com/images/G/09/associates/paapi/dg/index.html?rw_useCurrentProtocol=1">共通のリクエストパラメータ</a>}
+ */
 @Getter
 public abstract class Request {
     protected final static String SERVICE = "AWSECommerceService";
