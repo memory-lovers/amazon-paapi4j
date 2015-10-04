@@ -24,13 +24,11 @@ public abstract class Request {
     protected EndPoint endPoint = ENDPOINT_JP;
     @Setter
     protected String associateTag = "toshokan06a-22";
-    @Setter
     protected ContentType contentType = ContentType.TEXT_XML;
     @Setter
     protected String merchantId = "Amazon";
     @Setter
     protected boolean validate = false;
-    @Setter
     protected String version = "2013-08-01";
 
     protected Request(String secretKey, String awsAccessKeyId) {
