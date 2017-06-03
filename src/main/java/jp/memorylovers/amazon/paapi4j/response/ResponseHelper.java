@@ -1,7 +1,8 @@
 package jp.memorylovers.amazon.paapi4j.response;
 
 import jp.memorylovers.amazon.paapi4j.request.Request;
-import jp.memorylovers.amazon.paapi4j.request.SignedRequestsHelper;
+import jp.memorylovers.amazon.paapi4j.sign.SignedRequestsHelper;
+
 import org.simpleframework.xml.core.Persister;
 
 import java.io.InputStreamReader;

@@ -1,6 +1,8 @@
-package jp.memorylovers.amazon.paapi4j.request;
+package jp.memorylovers.amazon.paapi4j.sign;
 
 import org.apache.commons.codec.binary.Base64;
+
+import jp.memorylovers.amazon.paapi4j.request.Request;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
@@ -16,11 +18,13 @@ import java.util.TreeMap;
 public class SignedRequestsHelper {
     // All strings are handled as UTF-8
     private static final String UTF8_CHARSET = "UTF-8";
-    //The HMAC algorithm required by Amazon
+    // The HMAC algorithm required by Amazon
     private static final String HMAC_SHA256_ALGORITHM = "HmacSHA256";
-    // This is the URI for the service, don't change unless you really know what you're doing.
+    // This is the URI for the service, don't change unless you really know what
+    // you're doing.
     private static final String REQUEST_URI = "/onca/xml";
-    // The sample uses HTTP GET to fetch the response. If you changed the sample to use HTTP POST instead, change the value below to POST.
+    // The sample uses HTTP GET to fetch the response. If you changed the sample
+    // to use HTTP POST instead, change the value below to POST.
     private static final String REQUEST_METHOD = "GET";
 
     private SecretKeySpec secretKeySpec = null;
@@ -30,9 +34,9 @@ public class SignedRequestsHelper {
     private SignedRequestsHelper() {
     }
 
-    public static SignedRequestsHelper getInstance(
-            String awsSecretKey
-    ) throws IllegalArgumentException, UnsupportedEncodingException, NoSuchAlgorithmException, InvalidKeyException {
+    public static SignedRequestsHelper getInstance(String awsSecretKey)
+            throws IllegalArgumentException, UnsupportedEncodingException,
+            NoSuchAlgorithmException, InvalidKeyException {
         if (null == awsSecretKey || awsSecretKey.length() == 0) {
             throw new IllegalArgumentException("awsSecretKey is null or empty");
         }
@@ -53,36 +57,36 @@ public class SignedRequestsHelper {
      * any way, doing so will invalidate the signature and Amazon will reject
      * the request.
      *
-     * @param request Request @see Request
+     * @param request
+     *            Request @see Request
      * @return Request URL
      */
     public String sign(Request request) {
-        // The parameters need to be processed in lexicographical order, so we'll
+        // The parameters need to be processed in lexicographical order, so
+        // we'll
         // use a TreeMap implementation for that.
-        SortedMap<String, String> sortedParamMap = new TreeMap<>(request.getParamsMap());
+        SortedMap<String, String> sortedParamMap = new TreeMap<>(request
+            .getParamsMap());
 
         // get the canonical form the query string
         String canonicalQS = this.canonicalize(sortedParamMap);
 
-        // create the string upon which the signature is calculated 
-        String toSign =
-                REQUEST_METHOD + "\n"
-                        + request.endPoint + "\n"
-                        + REQUEST_URI + "\n"
-                        + canonicalQS;
+        // create the string upon which the signature is calculated
+        String toSign = REQUEST_METHOD + "\n" + request.getEndPoint() + "\n" + REQUEST_URI + "\n" + canonicalQS;
 
         // get the signature
         String hmac = hmac(toSign);
         String sig = percentEncodeRfc3986(hmac);
 
         // construct the URL
-        return "http://" + request.endPoint + REQUEST_URI + "?" + canonicalQS + "&Signature=" + sig;
+        return "http://" + request.getEndPoint() + REQUEST_URI + "?" + canonicalQS + "&Signature=" + sig;
     }
 
     /**
      * Compute the HMAC.
      *
-     * @param stringToSign String to compute the HMAC over.
+     * @param stringToSign
+     *            String to compute the HMAC over.
      * @return base64-encoded hmac value.
      */
     private String hmac(String stringToSign) {
@@ -103,7 +107,8 @@ public class SignedRequestsHelper {
     /**
      * Canonicalize the query string as required by Amazon.
      *
-     * @param sortedParamMap Parameter name-value pairs in lexicographical order.
+     * @param sortedParamMap
+     *            Parameter name-value pairs in lexicographical order.
      * @return Canonical form of query string.
      */
     private String canonicalize(SortedMap<String, String> sortedParamMap) {
@@ -112,7 +117,8 @@ public class SignedRequestsHelper {
         }
 
         StringBuilder buffer = new StringBuilder();
-        Iterator<Map.Entry<String, String>> iter = sortedParamMap.entrySet().iterator();
+        Iterator<Map.Entry<String, String>> iter = sortedParamMap.entrySet()
+            .iterator();
 
         while (iter.hasNext()) {
             Map.Entry<String, String> kvpair = iter.next();
@@ -128,19 +134,20 @@ public class SignedRequestsHelper {
 
     /**
      * Percent-encode values according the RFC 3986. The built-in Java
-     * URLEncoder does not encode according to the RFC, so we make the
-     * extra replacements.
+     * URLEncoder does not encode according to the RFC, so we make the extra
+     * replacements.
      *
-     * @param s decoded string
+     * @param s
+     *            decoded string
      * @return encoded string per RFC 3986
      */
     private String percentEncodeRfc3986(String s) {
         String out;
         try {
             out = URLEncoder.encode(s, UTF8_CHARSET)
-                    .replace("+", "%20")
-                    .replace("*", "%2A")
-                    .replace("%7E", "~");
+                .replace("+", "%20")
+                .replace("*", "%2A")
+                .replace("%7E", "~");
         } catch (UnsupportedEncodingException e) {
             out = s;
         }
