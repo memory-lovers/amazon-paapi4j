@@ -79,7 +79,7 @@ public class SignedRequestsHelper {
         String sig = percentEncodeRfc3986(hmac);
 
         // construct the URL
-        return "http://" + request.getEndPoint() + REQUEST_URI + "?" + canonicalQS + "&Signature=" + sig;
+        return "https://" + request.getEndPoint() + REQUEST_URI + "?" + canonicalQS + "&Signature=" + sig;
     }
 
     /**
