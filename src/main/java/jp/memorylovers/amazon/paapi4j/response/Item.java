@@ -1,6 +1,9 @@
 package jp.memorylovers.amazon.paapi4j.response;
 
+import java.util.List;
+
 import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.Path;
 
 public class Item {
@@ -40,22 +43,7 @@ public class Item {
     @Element(name = "LowestUsedPrice", required = false)
     public Price lowestUsedPrice;
 
-    @Override
-    public String toString() {
-        return "\t\tItem{\n" +
-                "\t\t\tasin                   = '" + asin + "\',\n" +
-                "\t\t\tdetailPageUrl          = '" + detailPageUrl + "\',\n" +
-                itemAttributes + "\n" +
-                "\t\t\tswatchImage            = " + swatchImage + "\n" +
-                "\t\t\tsmallImage             = " + smallImage + "\n" +
-                "\t\t\tthumbnailImage         = " + thumbnailImage + "\n" +
-                "\t\t\ttinyImage              = " + tinyImage + "\n" +
-                "\t\t\tmediumImage            = " + mediumImage + "\n" +
-                "\t\t\tlargeImage             = " + largeImage + "\n" +
-                "\t\t\tlowestNewPrice         = " + lowestNewPrice + "\n" +
-                "\t\t\tlowestCollectiblePrice = " + lowestCollectiblePrice + "\n" +
-                "\t\t\tlowestUsedPrice        = " + lowestUsedPrice + "\n" +
-                "\t\t}";
-    }
+    @Path("BrowseNodes")
+    @ElementList(entry = "BrowseNode", required = false, inline = true)
+    public List<BrowseNode> browseNodes;
 }
-

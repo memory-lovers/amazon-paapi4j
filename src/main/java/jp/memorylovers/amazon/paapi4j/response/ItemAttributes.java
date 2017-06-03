@@ -1,9 +1,9 @@
 package jp.memorylovers.amazon.paapi4j.response;
 
+import java.util.List;
+
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
-
-import java.util.List;
 
 public class ItemAttributes {
     @ElementList(entry = "Author", required = false, inline = true)
@@ -29,21 +29,4 @@ public class ItemAttributes {
 
     @Element(name = "Title", required = false)
     public String title;
-
-    @Override
-    public String toString() {
-        return "\t\t\tItemAttributes{\n" +
-                "\t\t\t\tauthor             = '" + author + "\',\n" +
-                "\t\t\t\tbinding            = '" + binding + "\',\n" +
-                "\t\t\t\tean                = '" + ean + "\',\n" +
-                "\t\t\t\tisbn               = '" + isbn + "\',\n" +
-                "\t\t\t\tlistPrice          = '" + listPrice + "\',\n" +
-                "\t\t\t\tmanufacturer       = '" + manufacturer + "\',\n" +
-                "\t\t\t\tproductGroup       = '" + productGroup + "\',\n" +
-                "\t\t\t\tpublicationDate    = '" + publicationDate + "\',\n" +
-                "\t\t\t\tpublisher          = '" + publisher + "\',\n" +
-                "\t\t\t\treleaseDate        = '" + releaseDate + "\',\n" +
-                "\t\t\t\ttitle              = '" + title + "\'\n" +
-                "\t\t\t}";
-    }
 }

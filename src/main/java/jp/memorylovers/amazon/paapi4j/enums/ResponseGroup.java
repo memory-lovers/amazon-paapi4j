@@ -7,7 +7,7 @@ package jp.memorylovers.amazon.paapi4j.enums;
  */
 public enum ResponseGroup {
     //    ACCESSORIES("Accessories"),
-//    BROWSE_NODES("BrowseNodes"),
+    BROWSE_NODES("BrowseNodes"),
 //    EDITORIAL_REVIEW("EditorialReview"),
 //    ITEM_ATTRIBUTES("ItemAttributes"),
 //    ITEM_IDS("ItemIds"),
