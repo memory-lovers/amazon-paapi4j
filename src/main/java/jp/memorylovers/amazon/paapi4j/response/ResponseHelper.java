@@ -1,12 +1,10 @@
 package jp.memorylovers.amazon.paapi4j.response;
 
-import java.io.InputStreamReader;
-import java.net.URL;
-
 import org.simpleframework.xml.core.Persister;
 
 import jp.memorylovers.amazon.paapi4j.exception.PAAPI4jException;
 import jp.memorylovers.amazon.paapi4j.request.Request;
+import okhttp3.OkHttpClient;
 
 public class ResponseHelper {
 
@@ -14,13 +12,21 @@ public class ResponseHelper {
 
     protected Response readResponse() throws Exception {
         String requestUrl = request.getRequestUrl();
-        try (InputStreamReader ir = new InputStreamReader(new URL(requestUrl)
-            .openConnection()
-            .getInputStream())) {
-            return new Persister().read(Response.class, ir, false);
+
+        OkHttpClient client = new OkHttpClient();
+        okhttp3.Request request = new okhttp3.Request.Builder()
+                .url(requestUrl)
+                .build();
+
+        try (okhttp3.Response response = client.newCall(request).execute()) {
+            return deserialize(response.body().string());
         } catch (Exception e) {
             throw e;
         }
+    }
+
+    protected Response deserialize(String responseBodsy) throws Exception {
+        return new Persister().read(Response.class, responseBodsy, false);
     }
 
     public Response getResponse(Request request) throws PAAPI4jException {

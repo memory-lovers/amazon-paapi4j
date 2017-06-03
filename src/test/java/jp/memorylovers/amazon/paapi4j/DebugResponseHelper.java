@@ -2,10 +2,8 @@ package jp.memorylovers.amazon.paapi4j;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
 import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
+import java.nio.file.StandardOpenOption;
 
 import org.simpleframework.xml.core.Persister;
 
@@ -18,21 +16,13 @@ import jp.memorylovers.amazon.paapi4j.utils.Utils;
 public class DebugResponseHelper extends ResponseHelper {
     private static final String OUTPUT_DIR = "out";
 
-    protected DebugResponseHelper() {
+    @Override
+    protected Response deserialize(String responseBodsy) throws Exception {
+        dumpFile(responseBodsy);
+        return new Persister().read(Response.class, responseBodsy, false);
     }
 
-    protected Response readResponse() throws Exception {
-        String requestUrl = request.getRequestUrl();
-        try (InputStream is = new URL(requestUrl).openConnection()
-            .getInputStream()) {
-            File outFile = dumpFile(is);
-            return new Persister().read(Response.class, outFile, false);
-        } catch (Exception e) {
-            throw e;
-        }
-    }
-
-    private File dumpFile(InputStream is) throws IOException {
+    private File dumpFile(String contents) throws IOException {
         File outDir = new File(OUTPUT_DIR);
 
         if (!outDir.exists()) {
@@ -47,7 +37,7 @@ public class DebugResponseHelper extends ResponseHelper {
             sb.append(((RequestItemLookup) request).getResponseGroup());
             sb.append("_");
         } else if (request instanceof RequestItemSearch) {
-            sb.append(((RequestItemLookup) request).getResponseGroup());
+            sb.append(((RequestItemSearch) request).getResponseGroup());
             sb.append("_");
         }
 
@@ -57,7 +47,7 @@ public class DebugResponseHelper extends ResponseHelper {
         File outFile = new File(outDir, sb.toString());
 
         System.out.println("output: " + outFile.getAbsolutePath());
-        Files.copy(is, outFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        Files.write(outFile.toPath(), contents.getBytes(), StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.CREATE, StandardOpenOption.WRITE);
 
         return outFile;
     }

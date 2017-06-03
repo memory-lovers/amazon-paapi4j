@@ -23,6 +23,10 @@ public class Response {
     @Setter
     public String requestUrl;
 
-    @Element(name = "Items")
+    @Element(name = "Items", required = false)
     public Items items;
+
+    @Element(name = "Error", required = false)
+    public Error error;
+
 }

@@ -36,7 +36,8 @@ public class PrittyPrintUtils {
                     if (child == null) {
                         appendField(indent, field.getName(), child);
                     } else {
-                        List list = (List) child;
+                        @SuppressWarnings("unchecked")
+                        List<Object> list = (List<Object>) child;
                         appendLn(indent, field.getName() + " = [ ");
                         for (Object c : list) {
                             prittyPrint(indent + 1, null, c);
