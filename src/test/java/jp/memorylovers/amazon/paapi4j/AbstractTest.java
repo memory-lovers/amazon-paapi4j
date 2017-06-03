@@ -9,7 +9,6 @@ import jp.memorylovers.amazon.paapi4j.request.Request;
 import jp.memorylovers.amazon.paapi4j.request.sign.AuthInfo;
 import jp.memorylovers.amazon.paapi4j.request.sign.AuthInfoFactory;
 import jp.memorylovers.amazon.paapi4j.response.Response;
-import jp.memorylovers.amazon.paapi4j.response.ResponseHelper;
 
 public class AbstractTest {
     protected static String accessKey;
@@ -33,9 +32,7 @@ public class AbstractTest {
     public Response getResponse(Request request) {
         Response response = null;
         try {
-            String requestUrl = request.getRequestUrl();
-            System.out.println("url: " + requestUrl);
-            response = ResponseHelper.getResponse(requestUrl);
+            response = new DebugResponseHelper().getResponse(request);
             response.setRequest(request);
             System.out.println(response.toString());
         } catch (Exception e) {

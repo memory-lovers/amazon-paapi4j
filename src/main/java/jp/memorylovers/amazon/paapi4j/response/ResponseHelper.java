@@ -10,29 +10,25 @@ import jp.memorylovers.amazon.paapi4j.request.Request;
 
 public class ResponseHelper {
 
-    private ResponseHelper() {
+    protected ResponseHelper() {
     }
 
-    public static Response getResponse(String requestUrl)
+    public Response getResponse(String operationName, String requestUrl)
             throws PAAPI4jException {
         try (InputStreamReader ir = new InputStreamReader(new URL(requestUrl)
             .openConnection()
             .getInputStream())) {
-            return read(ir);
+            return new Persister().read(Response.class, ir, false);
         } catch (Exception e) {
             throw new PAAPI4jException(e.getLocalizedMessage() + "\nurl is " + requestUrl, e);
         }
     }
 
-    protected static Response read(InputStreamReader ir) throws Exception {
-        return new Persister().read(Response.class, ir, false);
-    }
-
-    public static Response getResponse(Request request) {
+    public Response getResponse(Request request) {
         String requestUrl = null;
         try {
             requestUrl = request.getRequestUrl();
-            Response response = getResponse(requestUrl);
+            Response response = getResponse(request.operation(), requestUrl);
             if (response != null) {
                 response.setRequest(request);
                 response.setRequestUrl(requestUrl);

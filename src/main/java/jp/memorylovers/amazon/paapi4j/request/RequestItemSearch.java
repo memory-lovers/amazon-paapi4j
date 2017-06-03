@@ -68,7 +68,7 @@ public class RequestItemSearch extends Request {
     }
 
     @Override
-    protected String operation() {
+    public String operation() {
         return "ItemSearch";
     }
 

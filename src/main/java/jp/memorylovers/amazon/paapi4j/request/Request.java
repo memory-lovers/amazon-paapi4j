@@ -70,7 +70,7 @@ public abstract class Request {
 
     protected abstract Map<String, String> setParams(Map<String, String> params);
 
-    protected abstract String operation();
+    public abstract String operation();
 
     protected String enc(String str) {
         return str.replace(" ", "%20")
