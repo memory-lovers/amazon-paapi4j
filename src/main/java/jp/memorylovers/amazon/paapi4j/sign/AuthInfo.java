@@ -2,6 +2,7 @@ package jp.memorylovers.amazon.paapi4j.sign;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 /**
  * AuthInfo class. this class holds the information necessary for authentication.
@@ -9,6 +10,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
+@ToString
 public class AuthInfo {
     private String associateTag;
     private String accessKey;

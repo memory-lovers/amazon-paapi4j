@@ -32,7 +32,7 @@ public class AuthInfoFactory {
         AuthInfo info = new AuthInfo();
         info.setAssociateTag(rb.getString(KEY_ASSOCIATE_TAG));
         info.setAccessKey(rb.getString(KEY_ACCESS_KEY));
-        info.setAccessKey(rb.getString(KEY_ACCESS_KEY));
+        info.setSecretKey(rb.getString(KEY_SECRET_KEY));
         return info;
     }
 }
