@@ -7,8 +7,6 @@
         </HTTPHeaders>
         <RequestId>51a4514c-1e16-487f-a307-84f2d0f7a1f7</RequestId>
         <Arguments>
-            <Argument Name="AWSAccessKeyId" Value="AKIAIF2O5K3NZBYBHA4A"></Argument>
-            <Argument Name="AssociateTag" Value="toshokan06a-22"></Argument>
             <Argument Name="BrowseNode" Value="2278488051"></Argument>
             <Argument Name="Condition" Value="New"></Argument>
             <Argument Name="MerchantId" Value="Amazon"></Argument>
@@ -19,7 +17,6 @@
             <Argument Name="Service" Value="AWSECommerceService"></Argument>
             <Argument Name="Timestamp" Value="2015-10-02T14:59:08Z"></Argument>
             <Argument Name="Version" Value="2013-08-01"></Argument>
-            <Argument Name="Signature" Value="U9oieir2F/68R/TvJ9obWqTsKe4g2SOLn7CHxSoptPU="></Argument>
         </Arguments>
         <RequestProcessingTime>0.0485600000000000</RequestProcessingTime>
     </OperationRequest>

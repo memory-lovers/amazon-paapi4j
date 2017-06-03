@@ -7,8 +7,6 @@
         </HTTPHeaders>
         <RequestId>78e2c9ab-448f-4ae8-a83d-3b579936da02</RequestId>
         <Arguments>
-            <Argument Name="AWSAccessKeyId" Value="AKIAIF2O5K3NZBYBHA4A"></Argument>
-            <Argument Name="AssociateTag" Value="toshokan06a-22"></Argument>
             <Argument Name="Condition" Value="New"></Argument>
             <Argument Name="ItemPage" Value="1"></Argument>
             <Argument Name="Operation" Value="ItemSearch"></Argument>
@@ -20,7 +18,6 @@
             <Argument Name="Timestamp" Value="2015-10-04T13:17:12Z"></Argument>
             <Argument Name="Validate" Value="False"></Argument>
             <Argument Name="Version" Value="2013-08-01"></Argument>
-            <Argument Name="Signature" Value="RtdCvF8EDG7STOi8pWslDK/P/rVm4BAlqC0HoY/7qms="></Argument>
         </Arguments>
         <RequestProcessingTime>0.0449572600000000</RequestProcessingTime>
     </OperationRequest>
