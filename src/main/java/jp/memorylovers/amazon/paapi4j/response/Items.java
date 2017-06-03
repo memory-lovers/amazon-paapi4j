@@ -33,13 +33,13 @@ public class Items {
                 "\t}";
     }
 
-    private String toString(List list) {
+    private String toString(List<Item> list) {
         if (list == null) {
             return "";
         }
 
         StringBuilder sb = new StringBuilder();
-        Iterator iterator = list.iterator();
+        Iterator<Item> iterator = list.iterator();
         while (iterator.hasNext()) {
             sb.append(iterator.next());
             if (iterator.hasNext()) {
