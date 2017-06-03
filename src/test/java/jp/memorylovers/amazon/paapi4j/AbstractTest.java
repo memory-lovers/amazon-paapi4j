@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 
 import jp.memorylovers.amazon.paapi4j.exception.PAAPI4jException;
-import jp.memorylovers.amazon.paapi4j.sign.AuthInfo;
-import jp.memorylovers.amazon.paapi4j.sign.AuthInfoFactory;
+import jp.memorylovers.amazon.paapi4j.request.sign.AuthInfo;
+import jp.memorylovers.amazon.paapi4j.request.sign.AuthInfoFactory;
 
 public class AbstractTest {
     protected static String accessKey;

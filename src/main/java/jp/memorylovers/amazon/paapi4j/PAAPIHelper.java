@@ -1,9 +1,9 @@
 package jp.memorylovers.amazon.paapi4j;
 
 import jp.memorylovers.amazon.paapi4j.request.Request;
+import jp.memorylovers.amazon.paapi4j.request.sign.SignedRequestsHelper;
 import jp.memorylovers.amazon.paapi4j.response.Response;
 import jp.memorylovers.amazon.paapi4j.response.ResponseHelper;
-import jp.memorylovers.amazon.paapi4j.sign.SignedRequestsHelper;
 import jp.memorylovers.amazon.paapi4j.utils.Utils;
 
 import java.io.UnsupportedEncodingException;

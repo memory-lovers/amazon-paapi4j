@@ -1,4 +1,4 @@
-package jp.memorylovers.amazon.paapi4j.sign;
+package jp.memorylovers.amazon.paapi4j.request.sign;
 
 import java.util.ResourceBundle;
 
