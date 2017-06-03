@@ -12,7 +12,7 @@ public class RequestBuilderTest extends AbstractTest {
     @Test
     public void testBuilder() {
         Request request = RequestItemSearch
-                .builder(secretKey, accessKey)
+                .builder(authInfo)
                 .author("Author")
                 .browseNode(2278488051L)
                 .responseGroup(ResponseGroup.MEDIUM)

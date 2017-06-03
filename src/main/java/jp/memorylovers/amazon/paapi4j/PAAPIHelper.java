@@ -1,22 +1,19 @@
 package jp.memorylovers.amazon.paapi4j;
 
-import jp.memorylovers.amazon.paapi4j.request.Request;
-import jp.memorylovers.amazon.paapi4j.request.sign.SignedRequestsHelper;
-import jp.memorylovers.amazon.paapi4j.response.Response;
-import jp.memorylovers.amazon.paapi4j.response.ResponseHelper;
-import jp.memorylovers.amazon.paapi4j.utils.Utils;
-
-import java.io.UnsupportedEncodingException;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import jp.memorylovers.amazon.paapi4j.exception.PAAPI4jException;
+import jp.memorylovers.amazon.paapi4j.request.Request;
+import jp.memorylovers.amazon.paapi4j.response.Response;
+import jp.memorylovers.amazon.paapi4j.response.ResponseHelper;
+import jp.memorylovers.amazon.paapi4j.utils.Utils;
+
 public class PAAPIHelper {
 
-    static Response getResponse(Request request) throws UnsupportedEncodingException, NoSuchAlgorithmException, InvalidKeyException {
-        String requestUrl = SignedRequestsHelper.getInstance(request.getSecretKey()).sign(request);
+    static Response getResponse(Request request) throws PAAPI4jException {
+        String requestUrl = request.getRequestUrl();
         Response response = ResponseHelper.getResponse(requestUrl);
         if (response != null) {
             response.setRequest(request);
@@ -26,7 +23,8 @@ public class PAAPIHelper {
         }
     }
 
-    private static Map<String, String> gainParams(Calendar calendar, String publisher, int page) {
+    private static Map<String, String> gainParams(Calendar calendar,
+                                                  String publisher, int page) {
         Map<String, String> params = gainParams(calendar, page);
         params.put("Publisher", publisher);
         return params;

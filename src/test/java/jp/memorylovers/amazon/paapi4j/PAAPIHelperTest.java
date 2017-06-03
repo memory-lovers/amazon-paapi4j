@@ -1,20 +1,18 @@
 package jp.memorylovers.amazon.paapi4j;
 
-import jp.memorylovers.amazon.paapi4j.request.PowerBuilder;
-import jp.memorylovers.amazon.paapi4j.request.Request;
-import jp.memorylovers.amazon.paapi4j.request.RequestItemSearch;
-import jp.memorylovers.amazon.paapi4j.request.sign.SignedRequestsHelper;
-import jp.memorylovers.amazon.paapi4j.response.Response;
-import jp.memorylovers.amazon.paapi4j.response.ResponseHelper;
+import static jp.memorylovers.amazon.paapi4j.enums.EndPoint.*;
+import static jp.memorylovers.amazon.paapi4j.enums.ResponseGroup.*;
+import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static jp.memorylovers.amazon.paapi4j.enums.EndPoint.ENDPOINT_JP;
-import static jp.memorylovers.amazon.paapi4j.enums.ResponseGroup.MEDIUM;
-import static junit.framework.Assert.assertNotNull;
-import static junit.framework.Assert.fail;
+import jp.memorylovers.amazon.paapi4j.request.PowerBuilder;
+import jp.memorylovers.amazon.paapi4j.request.Request;
+import jp.memorylovers.amazon.paapi4j.request.RequestItemSearch;
+import jp.memorylovers.amazon.paapi4j.response.Response;
+import jp.memorylovers.amazon.paapi4j.response.ResponseHelper;
 
 public class PAAPIHelperTest extends AbstractTest {
     @Before
@@ -28,7 +26,7 @@ public class PAAPIHelperTest extends AbstractTest {
     @Test
     public void test() {
         RequestItemSearch request = RequestItemSearch
-                .builder(ENDPOINT_JP, secretKey, accessKey)
+                .builder(ENDPOINT_JP, authInfo)
                 .browseNode(2278488051L)
                 .responseGroup(MEDIUM)
                 .publisher("集英社")
@@ -39,7 +37,7 @@ public class PAAPIHelperTest extends AbstractTest {
     @Test
     public void testErrorNoResult() {
         RequestItemSearch request = RequestItemSearch
-                .builder(ENDPOINT_JP, secretKey, accessKey)
+                .builder(ENDPOINT_JP, authInfo)
                 .browseNode(2278488051L)
                 .author("Author")
                 .responseGroup(MEDIUM)
@@ -52,7 +50,7 @@ public class PAAPIHelperTest extends AbstractTest {
     public void testPowerBuilder() {
         PowerBuilder builder = PowerBuilder.builder();
         RequestItemSearch request = RequestItemSearch
-                .builder(ENDPOINT_JP, secretKey, accessKey)
+                .builder(ENDPOINT_JP, authInfo)
                 .browseNode(2278488051L)
                 .responseGroup(MEDIUM)
                 .publisher("集英社")
@@ -63,16 +61,14 @@ public class PAAPIHelperTest extends AbstractTest {
 
     private void assertResult(Request request) {
         try {
-            String requestUrl = SignedRequestsHelper.getInstance(request.getSecretKey()).sign(request);
+            String requestUrl = request.getRequestUrl();
             System.out.println("url: " + requestUrl);
             Response response = ResponseHelper.getResponse(requestUrl);
             response.setRequest(request);
-            assertNotNull(response);
             System.out.println(response.toString());
         } catch (Exception e) {
-            System.err.println(e.getLocalizedMessage());
-            e.printStackTrace();
-            fail();
+            e.getCause().printStackTrace();
+            fail(e.getLocalizedMessage());
         }
     }
 }

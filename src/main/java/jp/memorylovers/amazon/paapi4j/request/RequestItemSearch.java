@@ -1,11 +1,12 @@
 package jp.memorylovers.amazon.paapi4j.request;
 
+import java.util.Map;
+
 import jp.memorylovers.amazon.paapi4j.enums.Condition;
 import jp.memorylovers.amazon.paapi4j.enums.EndPoint;
 import jp.memorylovers.amazon.paapi4j.enums.ResponseGroup;
+import jp.memorylovers.amazon.paapi4j.request.sign.AuthInfo;
 import lombok.Getter;
-
-import java.util.Map;
 
 /**
  * PAAPI Request parameters for ItemSearch operation<br>
@@ -30,20 +31,20 @@ public class RequestItemSearch extends Request {
     private String searchIndex = "Books";
     private Integer variationPage = null;
 
-    protected RequestItemSearch(String secretKey, String awsAccessKeyId) {
-        super(secretKey, awsAccessKeyId);
+    protected RequestItemSearch(AuthInfo authInfo) {
+        super(authInfo);
     }
 
-    protected RequestItemSearch(EndPoint endPoint, String secretKey, String awsAccessKeyId) {
-        super(endPoint, secretKey, awsAccessKeyId);
+    protected RequestItemSearch(EndPoint endPoint, AuthInfo authInfo) {
+        super(endPoint, authInfo);
     }
 
-    public static RequestItemSearch.Builder builder(String secretKey, String awsAccessKeyId) {
-        return new Builder(secretKey, awsAccessKeyId);
+    public static RequestItemSearch.Builder builder(AuthInfo authInfo) {
+        return new Builder(authInfo);
     }
 
-    public static RequestItemSearch.Builder builder(EndPoint endPoint, String secretKey, String awsAccessKeyId) {
-        return new Builder(endPoint, secretKey, awsAccessKeyId);
+    public static RequestItemSearch.Builder builder(EndPoint endPoint, AuthInfo authInfo) {
+        return new Builder(endPoint, authInfo);
     }
 
     @Override
@@ -74,12 +75,12 @@ public class RequestItemSearch extends Request {
     public static class Builder {
         private RequestItemSearch request;
 
-        protected Builder(String secretKey, String awsAccessKeyId) {
-            request = new RequestItemSearch(secretKey, awsAccessKeyId);
+        protected Builder(AuthInfo authInfo) {
+            request = new RequestItemSearch(authInfo);
         }
 
-        protected Builder(EndPoint endPoint, String secretKey, String awsAccessKeyId) {
-            request = new RequestItemSearch(endPoint, secretKey, awsAccessKeyId);
+        protected Builder(EndPoint endPoint, AuthInfo authInfo) {
+            request = new RequestItemSearch(endPoint, authInfo);
         }
 
         public RequestItemSearch build() {
@@ -153,11 +154,6 @@ public class RequestItemSearch extends Request {
 
 
         //for Request
-        public Builder associateTag(String associateTag) {
-            this.request.associateTag = associateTag;
-            return this;
-        }
-
         public Builder merchantId(String merchantId) {
             this.request.merchantId = merchantId;
             return this;
