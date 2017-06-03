@@ -2,7 +2,6 @@ package jp.memorylovers.amazon.paapi4j;
 
 import static jp.memorylovers.amazon.paapi4j.enums.EndPoint.*;
 import static jp.memorylovers.amazon.paapi4j.enums.ResponseGroup.*;
-import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
@@ -11,8 +10,6 @@ import org.junit.Test;
 import jp.memorylovers.amazon.paapi4j.request.PowerBuilder;
 import jp.memorylovers.amazon.paapi4j.request.Request;
 import jp.memorylovers.amazon.paapi4j.request.RequestItemSearch;
-import jp.memorylovers.amazon.paapi4j.response.Response;
-import jp.memorylovers.amazon.paapi4j.response.ResponseHelper;
 
 public class PAAPIHelperTest extends AbstractTest {
     @Before
@@ -60,15 +57,6 @@ public class PAAPIHelperTest extends AbstractTest {
     }
 
     private void assertResult(Request request) {
-        try {
-            String requestUrl = request.getRequestUrl();
-            System.out.println("url: " + requestUrl);
-            Response response = ResponseHelper.getResponse(requestUrl);
-            response.setRequest(request);
-            System.out.println(response.toString());
-        } catch (Exception e) {
-            e.getCause().printStackTrace();
-            fail(e.getLocalizedMessage());
-        }
+        getResponse(request);
     }
 }

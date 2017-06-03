@@ -18,10 +18,14 @@ public class ResponseHelper {
         try (InputStreamReader ir = new InputStreamReader(new URL(requestUrl)
             .openConnection()
             .getInputStream())) {
-            return new Persister().read(Response.class, ir, false);
+            return read(ir);
         } catch (Exception e) {
             throw new PAAPI4jException(e.getLocalizedMessage() + "\nurl is " + requestUrl, e);
         }
+    }
+
+    protected static Response read(InputStreamReader ir) throws Exception {
+        return new Persister().read(Response.class, ir, false);
     }
 
     public static Response getResponse(Request request) {
