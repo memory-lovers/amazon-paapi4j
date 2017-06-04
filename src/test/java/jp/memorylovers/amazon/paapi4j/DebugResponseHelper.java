@@ -2,6 +2,7 @@ package jp.memorylovers.amazon.paapi4j;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
 
@@ -15,6 +16,12 @@ import jp.memorylovers.amazon.paapi4j.utils.Utils;
 
 public class DebugResponseHelper extends ResponseHelper {
     private static final String OUTPUT_DIR = "out";
+
+    public Response deserializeFromFile(String filePath) throws Exception {
+        File file = new File("./" + filePath);
+        System.out.println("file is " + file.toPath());
+        return new Persister().read(Response.class, file, false);
+    }
 
     @Override
     protected Response deserialize(String responseBodsy) throws Exception {
@@ -47,7 +54,10 @@ public class DebugResponseHelper extends ResponseHelper {
         File outFile = new File(outDir, sb.toString());
 
         System.out.println("output: " + outFile.getAbsolutePath());
-        Files.write(outFile.toPath(), contents.getBytes(), StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.CREATE, StandardOpenOption.WRITE);
+        Files.write(
+            outFile.toPath(), contents.getBytes(),
+            StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.CREATE,
+            StandardOpenOption.WRITE);
 
         return outFile;
     }
