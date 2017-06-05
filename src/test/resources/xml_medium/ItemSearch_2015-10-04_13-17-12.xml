@@ -1,0 +1,1175 @@
+<?xml version="1.0" ?>
+<ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01">
+    <OperationRequest>
+        <HTTPHeaders>
+            <Header Name="UserAgent"
+                    Value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"></Header>
+        </HTTPHeaders>
+        <RequestId>78e2c9ab-448f-4ae8-a83d-3b579936da02</RequestId>
+        <Arguments>
+            <Argument Name="Condition" Value="New"></Argument>
+            <Argument Name="ItemPage" Value="1"></Argument>
+            <Argument Name="Operation" Value="ItemSearch"></Argument>
+            <Argument Name="Power" Value="pubdate: after 9-2015"></Argument>
+            <Argument Name="Publisher" Value="集英社"></Argument>
+            <Argument Name="ResponseGroup" Value="Medium"></Argument>
+            <Argument Name="SearchIndex" Value="Books"></Argument>
+            <Argument Name="Service" Value="AWSECommerceService"></Argument>
+            <Argument Name="Timestamp" Value="2015-10-04T13:17:12Z"></Argument>
+            <Argument Name="Validate" Value="False"></Argument>
+            <Argument Name="Version" Value="2013-08-01"></Argument>
+        </Arguments>
+        <RequestProcessingTime>0.0449572600000000</RequestProcessingTime>
+    </OperationRequest>
+    <Items>
+        <Request>
+            <IsValid>True</IsValid>
+            <ItemSearchRequest>
+                <Condition>New</Condition>
+                <ItemPage>1</ItemPage>
+                <Power>pubdate: after 9-2015</Power>
+                <Publisher>集英社</Publisher>
+                <ResponseGroup>Medium</ResponseGroup>
+                <SearchIndex>Books</SearchIndex>
+            </ItemSearchRequest>
+        </Request>
+        <TotalResults>289</TotalResults>
+        <TotalPages>29</TotalPages>
+        <MoreSearchResultsUrl>http://www.amazon.co.jp/gp/redirect.html?linkCode=xm2&amp;SubscriptionId=AKIAIF2O5K3NZBYBHA4A&amp;location=http%3A%2F%2Fwww.amazon.co.jp%2Fgp%2Fsearch%3Fkeywords%3D%25E9%259B%2586%25E8%258B%25B1%25E7%25A4%25BE%26url%3Dsearch-alias%253Dbooks-single-index&amp;tag=toshokan06a-22&amp;creative=5143&amp;camp=2025</MoreSearchResultsUrl>
+        <Item>
+            <ASIN>4089082579</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E3%80%8E%E6%9D%B1%E4%BA%AC%E5%96%B0%E7%A8%AE%E3%80%8F%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC-%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%96-%E7%9F%B3%E7%94%B0-%E3%82%B9%E3%82%A4/dp/4089082579%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4089082579
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4089082579%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082579
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4089082579%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082579
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4089082579%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082579
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4089082579%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082579
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <SalesRank>141</SalesRank>
+            <SmallImage>
+                <URL>http://ecx.images-amazon.com/images/I/51h%2BebG6gUL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">53</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>http://ecx.images-amazon.com/images/I/51h%2BebG6gUL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">113</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>http://ecx.images-amazon.com/images/I/51h%2BebG6gUL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">352</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51h%2BebG6gUL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">21</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51h%2BebG6gUL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">53</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51h%2BebG6gUL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">53</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51h%2BebG6gUL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">77</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51h%2BebG6gUL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">113</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51h%2BebG6gUL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">352</Width>
+                    </LargeImage>
+                    <HiResImage>
+                        <URL>http://ecx.images-amazon.com/images/I/91SOtLH%2B7-L.jpg</URL>
+                        <Height Units="pixels">2508</Height>
+                        <Width Units="pixels">1764</Width>
+                    </HiResImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>石田　スイ</Author>
+                <Binding>カレンダー</Binding>
+                <Brand>集英社</Brand>
+                <EAN>9784089082577</EAN>
+                <EANList>
+                    <EANListElement>9784089082577</EANListElement>
+                </EANList>
+                <Feature>タテ壁掛け型(紐付き、ミシン目有)</Feature>
+                <Feature>【サイズ】 B6変型 (185mm×120mm)</Feature>
+                <IsAdultProduct>0</IsAdultProduct>
+                <ISBN>4089082579</ISBN>
+                <Label>集英社</Label>
+                <Languages>
+                    <Language>
+                        <Name>日本語</Name>
+                        <Type>Published</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>2916</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 2,916</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2015-12-01</PublicationDate>
+                <Publisher>集英社</Publisher>
+                <Studio>集英社</Studio>
+                <Title>『東京喰種』コミックカレンダー　２０１６</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>2916</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 2,916</FormattedPrice>
+                </LowestNewPrice>
+                <TotalNew>3</TotalNew>
+                <TotalUsed>0</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+            <EditorialReviews>
+                <EditorialReview>
+                    <Source>Product Description</Source>
+                    <Content>集英社</Content>
+                    <IsLinkSuppressed>0</IsLinkSuppressed>
+                </EditorialReview>
+            </EditorialReviews>
+        </Item>
+        <Item>
+            <ASIN>4088804961</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/ONE-PIECE-79-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E6%A0%84%E4%B8%80%E9%83%8E/dp/4088804961%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4088804961
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4088804961%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804961
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4088804961%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804961
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4088804961%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804961
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4088804961%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804961
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <SalesRank>1</SalesRank>
+            <SmallImage>
+                <URL>http://ecx.images-amazon.com/images/I/61h6klLibAL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">47</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>http://ecx.images-amazon.com/images/I/61h6klLibAL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">101</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>http://ecx.images-amazon.com/images/I/61h6klLibAL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">315</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>http://ecx.images-amazon.com/images/I/61h6klLibAL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">19</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>http://ecx.images-amazon.com/images/I/61h6klLibAL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">47</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>http://ecx.images-amazon.com/images/I/61h6klLibAL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">47</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>http://ecx.images-amazon.com/images/I/61h6klLibAL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">69</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>http://ecx.images-amazon.com/images/I/61h6klLibAL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">101</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>http://ecx.images-amazon.com/images/I/61h6klLibAL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">315</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>尾田 栄一郎</Author>
+                <Binding>コミック</Binding>
+                <EAN>9784088804965</EAN>
+                <EANList>
+                    <EANListElement>9784088804965</EANListElement>
+                </EANList>
+                <ISBN>4088804961</ISBN>
+                <Label>集英社</Label>
+                <Languages>
+                    <Language>
+                        <Name>日本語</Name>
+                        <Type>Published</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>432</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 432</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>集英社</Manufacturer>
+                <NumberOfPages>200</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">87</Height>
+                    <Length Units="hundredths-inches">677</Length>
+                    <Weight Units="hundredths-pounds">31</Weight>
+                    <Width Units="hundredths-inches">441</Width>
+                </PackageDimensions>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2015-10-03</PublicationDate>
+                <Publisher>集英社</Publisher>
+                <ReleaseDate>2015-10-03</ReleaseDate>
+                <Studio>集英社</Studio>
+                <Title>ONE PIECE 79 (ジャンプコミックス)</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>432</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 432</FormattedPrice>
+                </LowestNewPrice>
+                <LowestUsedPrice>
+                    <Amount>150</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 150</FormattedPrice>
+                </LowestUsedPrice>
+                <LowestCollectiblePrice>
+                    <Amount>648</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 648</FormattedPrice>
+                </LowestCollectiblePrice>
+                <TotalNew>20</TotalNew>
+                <TotalUsed>8</TotalUsed>
+                <TotalCollectible>6</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+        </Item>
+        <Item>
+            <ASIN>B0156098D8</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/ONE-PIECE-%E3%83%A2%E3%83%8E%E3%82%AF%E3%83%AD%E7%89%88-79-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9DIGITAL-ebook/dp/B0156098D8%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0156098D8
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0156098D8%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098D8
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/B0156098D8%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098D8
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/B0156098D8%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098D8
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/B0156098D8%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098D8
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <SalesRank>40</SalesRank>
+            <ItemAttributes>
+                <Author>尾田栄一郎</Author>
+                <Binding>Kindle版</Binding>
+                <IsAdultProduct>0</IsAdultProduct>
+                <Label>集英社</Label>
+                <Languages>
+                    <Language>
+                        <Name>日本語</Name>
+                        <Type>Published</Type>
+                    </Language>
+                </Languages>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>eBooks</ProductGroup>
+                <ProductTypeName>ABIS_EBOOKS</ProductTypeName>
+                <PublicationDate>2015-10-03</PublicationDate>
+                <Publisher>集英社</Publisher>
+                <ReleaseDate>2015-11-04</ReleaseDate>
+                <Studio>集英社</Studio>
+                <Title>ONE PIECE モノクロ版 79 (ジャンプコミックスDIGITAL)</Title>
+            </ItemAttributes>
+            <EditorialReviews>
+                <EditorialReview>
+                    <Source>内容紹介</Source>
+                    <Content>ジャンプコミックスDIGITAL「ONE PIECE モノクロ版」79巻、11月4日配信スタート!!　※配信日は変更になることがあります。ご了承ください。</Content>
+                    <IsLinkSuppressed>0</IsLinkSuppressed>
+                </EditorialReview>
+            </EditorialReviews>
+        </Item>
+        <Item>
+            <ASIN>B015WPUKX4</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/BAILA-%E3%83%90%E3%82%A4%E3%83%A9-2015%E5%B9%B4-11-%E6%9C%88%E5%8F%B7/dp/B015WPUKX4%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB015WPUKX4
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3DB015WPUKX4%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB015WPUKX4
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/B015WPUKX4%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB015WPUKX4
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/B015WPUKX4%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB015WPUKX4
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/B015WPUKX4%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB015WPUKX4
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <ItemAttributes>
+                <Binding>雑誌</Binding>
+                <EAN>4910173771156</EAN>
+                <EANList>
+                    <EANListElement>4910173771156</EANListElement>
+                </EANList>
+                <Edition>月刊</Edition>
+                <Label>集英社</Label>
+                <Languages>
+                    <Language>
+                        <Name>日本語</Name>
+                        <Type>Published</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>780</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 780</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2015-10-10</PublicationDate>
+                <Publisher>集英社</Publisher>
+                <ReleaseDate>2015-10-10</ReleaseDate>
+                <Studio>集英社</Studio>
+                <Title>BAILA(バイラ) 2015年 11 月号 [雑誌]</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <TotalNew>0</TotalNew>
+                <TotalUsed>0</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+        </Item>
+        <Item>
+            <ASIN>4089082587</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%EF%BC%B4%EF%BD%8F-%EF%BC%AC%EF%BC%AF%EF%BC%B6%EF%BC%A5%E3%82%8B%EF%BC%8D%E3%81%A8%E3%82%89%E3%81%B6%E3%82%8B%EF%BC%8D%E3%83%80%E3%83%BC%E3%82%AF%E3%83%8D%E3%82%B9%E7%AC%AC%EF%BC%91%EF%BC%95%E5%B7%BB%E3%82%A2%E3%83%8B%E3%83%A1%EF%BC%A4%EF%BC%B6%EF%BC%A4%E4%BB%98%E4%BA%88%E7%B4%84%E9%99%90%E5%AE%9A%E7%89%88-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9/dp/4089082587%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4089082587
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4089082587%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082587
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4089082587%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082587
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4089082587%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082587
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4089082587%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4089082587
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <SalesRank>99</SalesRank>
+            <SmallImage>
+                <URL>http://ecx.images-amazon.com/images/I/51zPIoGAC1L._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">54</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>http://ecx.images-amazon.com/images/I/51zPIoGAC1L._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">116</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>http://ecx.images-amazon.com/images/I/51zPIoGAC1L.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">361</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51zPIoGAC1L._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">22</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51zPIoGAC1L._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">54</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51zPIoGAC1L._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">54</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51zPIoGAC1L._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">79</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51zPIoGAC1L._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">116</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51zPIoGAC1L.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">361</Width>
+                    </LargeImage>
+                    <HiResImage>
+                        <URL>http://ecx.images-amazon.com/images/I/71g%2B81mSSML.jpg</URL>
+                        <Height Units="pixels">1391</Height>
+                        <Width Units="pixels">1004</Width>
+                    </HiResImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Binding>DVD-ROM</Binding>
+                <EAN>9784089082584</EAN>
+                <EANList>
+                    <EANListElement>9784089082584</EANListElement>
+                </EANList>
+                <IsAdultProduct>0</IsAdultProduct>
+                <ISBN>4089082587</ISBN>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">126</Height>
+                    <Length Units="hundredths-inches">768</Length>
+                    <Width Units="hundredths-inches">551</Width>
+                </ItemDimensions>
+                <Label>集英社</Label>
+                <Languages>
+                    <Language>
+                        <Name>日本語</Name>
+                        <Type>Published</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>3713</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 3,713</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>集英社</Manufacturer>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">126</Height>
+                    <Length Units="hundredths-inches">768</Length>
+                    <Weight Units="hundredths-pounds">66</Weight>
+                    <Width Units="hundredths-inches">551</Width>
+                </PackageDimensions>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2016-01-04</PublicationDate>
+                <Publisher>集英社</Publisher>
+                <ReleaseDate>2016-01-04</ReleaseDate>
+                <Studio>集英社</Studio>
+                <Title>Ｔｏ　ＬＯＶＥる－とらぶる－ダークネス第１５巻アニメＤＶＤ付予約限定版 (ジャンプコミックス)</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>3713</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 3,713</FormattedPrice>
+                </LowestNewPrice>
+                <TotalNew>1</TotalNew>
+                <TotalUsed>0</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+        </Item>
+        <Item>
+            <ASIN>B01560988S</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E3%83%8F%E3%82%A4%E3%82%AD%E3%83%A5%E3%83%BC-18-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9DIGITAL-%E5%8F%A4%E8%88%98%E6%98%A5%E4%B8%80-ebook/dp/B01560988S%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB01560988S
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3DB01560988S%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB01560988S
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/B01560988S%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB01560988S
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/B01560988S%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB01560988S
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/B01560988S%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB01560988S
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <SalesRank>9</SalesRank>
+            <SmallImage>
+                <URL>http://ecx.images-amazon.com/images/I/619rqOXxSyL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">55</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>http://ecx.images-amazon.com/images/I/619rqOXxSyL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">118</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>http://ecx.images-amazon.com/images/I/619rqOXxSyL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">368</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>http://ecx.images-amazon.com/images/I/619rqOXxSyL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">22</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>http://ecx.images-amazon.com/images/I/619rqOXxSyL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">55</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>http://ecx.images-amazon.com/images/I/619rqOXxSyL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">55</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>http://ecx.images-amazon.com/images/I/619rqOXxSyL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">81</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>http://ecx.images-amazon.com/images/I/619rqOXxSyL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">118</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>http://ecx.images-amazon.com/images/I/619rqOXxSyL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">368</Width>
+                    </LargeImage>
+                    <HiResImage>
+                        <URL>http://ecx.images-amazon.com/images/I/81fsKVRAZfL.jpg</URL>
+                        <Height Units="pixels">1200</Height>
+                        <Width Units="pixels">884</Width>
+                    </HiResImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>古舘春一</Author>
+                <Binding>Kindle版</Binding>
+                <Format>Kindle本</Format>
+                <IsAdultProduct>0</IsAdultProduct>
+                <Label>集英社</Label>
+                <Languages>
+                    <Language>
+                        <Name>日本語</Name>
+                        <Type>Published</Type>
+                    </Language>
+                </Languages>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>eBooks</ProductGroup>
+                <ProductTypeName>ABIS_EBOOKS</ProductTypeName>
+                <PublicationDate>2015-10-03</PublicationDate>
+                <Publisher>集英社</Publisher>
+                <ReleaseDate>2015-10-03</ReleaseDate>
+                <Studio>集英社</Studio>
+                <Title>ハイキュー!! 18 (ジャンプコミックスDIGITAL)</Title>
+            </ItemAttributes>
+            <EditorialReviews>
+                <EditorialReview>
+                    <Source>内容紹介</Source>
+                    <Content>
+                        宿敵・青葉城西を破り、迎えた王者白鳥沢との県代表決定戦決勝!!　超高校級エース・牛島の圧倒的な力に苦戦するものの、烏野は西谷のレシーブを契機にチャンスを掴み始める。白鳥沢追撃のカギになるのは…!?
+                    </Content>
+                    <IsLinkSuppressed>0</IsLinkSuppressed>
+                </EditorialReview>
+            </EditorialReviews>
+        </Item>
+        <Item>
+            <ASIN>4088804848</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E3%83%8F%E3%82%A4%E3%82%AD%E3%83%A5%E3%83%BC-18-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E5%8F%A4%E8%88%98-%E6%98%A5%E4%B8%80/dp/4088804848%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4088804848
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4088804848%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804848
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4088804848%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804848
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4088804848%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804848
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4088804848%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804848
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <SalesRank>24</SalesRank>
+            <SmallImage>
+                <URL>http://ecx.images-amazon.com/images/I/51JeUCVAJkL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">48</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>http://ecx.images-amazon.com/images/I/51JeUCVAJkL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">101</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>http://ecx.images-amazon.com/images/I/51JeUCVAJkL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">317</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51JeUCVAJkL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">19</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51JeUCVAJkL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">48</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51JeUCVAJkL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">48</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51JeUCVAJkL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">70</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51JeUCVAJkL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">101</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51JeUCVAJkL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">317</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>古舘 春一</Author>
+                <Binding>コミック</Binding>
+                <EAN>9784088804842</EAN>
+                <EANList>
+                    <EANListElement>9784088804842</EANListElement>
+                </EANList>
+                <ISBN>4088804848</ISBN>
+                <Label>集英社</Label>
+                <Languages>
+                    <Language>
+                        <Name>日本語</Name>
+                        <Type>Published</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>432</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 432</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>集英社</Manufacturer>
+                <NumberOfPages>192</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">79</Height>
+                    <Length Units="hundredths-inches">677</Length>
+                    <Weight Units="hundredths-pounds">31</Weight>
+                    <Width Units="hundredths-inches">441</Width>
+                </PackageDimensions>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2015-10-03</PublicationDate>
+                <Publisher>集英社</Publisher>
+                <ReleaseDate>2015-10-03</ReleaseDate>
+                <Studio>集英社</Studio>
+                <Title>ハイキュー!! 18 (ジャンプコミックス)</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>432</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 432</FormattedPrice>
+                </LowestNewPrice>
+                <LowestUsedPrice>
+                    <Amount>1271</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 1,271</FormattedPrice>
+                </LowestUsedPrice>
+                <LowestCollectiblePrice>
+                    <Amount>648</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 648</FormattedPrice>
+                </LowestCollectiblePrice>
+                <TotalNew>20</TotalNew>
+                <TotalUsed>1</TotalUsed>
+                <TotalCollectible>5</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+        </Item>
+        <Item>
+            <ASIN>B0156098AG</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E6%9A%97%E6%AE%BA%E6%95%99%E5%AE%A4-16-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9DIGITAL-%E6%9D%BE%E4%BA%95%E5%84%AA%E5%BE%81-ebook/dp/B0156098AG%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0156098AG
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0156098AG%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098AG
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/B0156098AG%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098AG
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/B0156098AG%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098AG
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/B0156098AG%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3DB0156098AG
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <SalesRank>4</SalesRank>
+            <SmallImage>
+                <URL>http://ecx.images-amazon.com/images/I/51GUZpnOIIL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">55</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>http://ecx.images-amazon.com/images/I/51GUZpnOIIL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">118</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>http://ecx.images-amazon.com/images/I/51GUZpnOIIL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">368</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51GUZpnOIIL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">22</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51GUZpnOIIL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">55</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51GUZpnOIIL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">55</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51GUZpnOIIL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">81</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51GUZpnOIIL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">118</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51GUZpnOIIL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">368</Width>
+                    </LargeImage>
+                    <HiResImage>
+                        <URL>http://ecx.images-amazon.com/images/I/815v3qsz1YL.jpg</URL>
+                        <Height Units="pixels">1200</Height>
+                        <Width Units="pixels">884</Width>
+                    </HiResImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>松井優征</Author>
+                <Binding>Kindle版</Binding>
+                <Format>Kindle本</Format>
+                <IsAdultProduct>0</IsAdultProduct>
+                <Label>集英社</Label>
+                <Languages>
+                    <Language>
+                        <Name>日本語</Name>
+                        <Type>Published</Type>
+                    </Language>
+                </Languages>
+                <Manufacturer>集英社</Manufacturer>
+                <ProductGroup>eBooks</ProductGroup>
+                <ProductTypeName>ABIS_EBOOKS</ProductTypeName>
+                <PublicationDate>2015-10-03</PublicationDate>
+                <Publisher>集英社</Publisher>
+                <ReleaseDate>2015-10-03</ReleaseDate>
+                <Studio>集英社</Studio>
+                <Title>暗殺教室 16 (ジャンプコミックスDIGITAL)</Title>
+            </ItemAttributes>
+            <EditorialReviews>
+                <EditorialReview>
+                    <Source>内容紹介</Source>
+                    <Content>殺せんせーが語る自身の過去…。それは1人の人間への苛酷な人体実験と、ある女性との間に結ばれた絆についてのものだった。それを聞いた生徒達は!?</Content>
+                    <IsLinkSuppressed>0</IsLinkSuppressed>
+                </EditorialReview>
+            </EditorialReviews>
+        </Item>
+        <Item>
+            <ASIN>4088804856</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E6%9A%97%E6%AE%BA%E6%95%99%E5%AE%A4-16-%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E6%9D%BE%E4%BA%95-%E5%84%AA%E5%BE%81/dp/4088804856%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4088804856
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4088804856%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804856
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4088804856%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804856
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4088804856%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804856
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4088804856%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088804856
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <SalesRank>16</SalesRank>
+            <SmallImage>
+                <URL>http://ecx.images-amazon.com/images/I/51U5OFnEMOL._SL75_.jpg</URL>
+                <Height Units="pixels">75</Height>
+                <Width Units="pixels">48</Width>
+            </SmallImage>
+            <MediumImage>
+                <URL>http://ecx.images-amazon.com/images/I/51U5OFnEMOL._SL160_.jpg</URL>
+                <Height Units="pixels">160</Height>
+                <Width Units="pixels">102</Width>
+            </MediumImage>
+            <LargeImage>
+                <URL>http://ecx.images-amazon.com/images/I/51U5OFnEMOL.jpg</URL>
+                <Height Units="pixels">500</Height>
+                <Width Units="pixels">318</Width>
+            </LargeImage>
+            <ImageSets>
+                <ImageSet Category="primary">
+                    <SwatchImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51U5OFnEMOL._SL30_.jpg</URL>
+                        <Height Units="pixels">30</Height>
+                        <Width Units="pixels">19</Width>
+                    </SwatchImage>
+                    <SmallImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51U5OFnEMOL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">48</Width>
+                    </SmallImage>
+                    <ThumbnailImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51U5OFnEMOL._SL75_.jpg</URL>
+                        <Height Units="pixels">75</Height>
+                        <Width Units="pixels">48</Width>
+                    </ThumbnailImage>
+                    <TinyImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51U5OFnEMOL._SL110_.jpg</URL>
+                        <Height Units="pixels">110</Height>
+                        <Width Units="pixels">70</Width>
+                    </TinyImage>
+                    <MediumImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51U5OFnEMOL._SL160_.jpg</URL>
+                        <Height Units="pixels">160</Height>
+                        <Width Units="pixels">102</Width>
+                    </MediumImage>
+                    <LargeImage>
+                        <URL>http://ecx.images-amazon.com/images/I/51U5OFnEMOL.jpg</URL>
+                        <Height Units="pixels">500</Height>
+                        <Width Units="pixels">318</Width>
+                    </LargeImage>
+                </ImageSet>
+            </ImageSets>
+            <ItemAttributes>
+                <Author>松井 優征</Author>
+                <Binding>コミック</Binding>
+                <EAN>9784088804859</EAN>
+                <EANList>
+                    <EANListElement>9784088804859</EANListElement>
+                </EANList>
+                <ISBN>4088804856</ISBN>
+                <Label>集英社</Label>
+                <Languages>
+                    <Language>
+                        <Name>日本語</Name>
+                        <Type>Published</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>432</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 432</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>集英社</Manufacturer>
+                <NumberOfPages>192</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">79</Height>
+                    <Length Units="hundredths-inches">685</Length>
+                    <Weight Units="hundredths-pounds">26</Weight>
+                    <Width Units="hundredths-inches">441</Width>
+                </PackageDimensions>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2015-10-03</PublicationDate>
+                <Publisher>集英社</Publisher>
+                <ReleaseDate>2015-10-03</ReleaseDate>
+                <Studio>集英社</Studio>
+                <Title>暗殺教室 16 (ジャンプコミックス)</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>432</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 432</FormattedPrice>
+                </LowestNewPrice>
+                <LowestUsedPrice>
+                    <Amount>1271</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 1,271</FormattedPrice>
+                </LowestUsedPrice>
+                <LowestCollectiblePrice>
+                    <Amount>648</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 648</FormattedPrice>
+                </LowestCollectiblePrice>
+                <TotalNew>21</TotalNew>
+                <TotalUsed>2</TotalUsed>
+                <TotalCollectible>6</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+        </Item>
+        <Item>
+            <ASIN>4088902777</ASIN>
+            <DetailPageURL>
+                http://www.amazon.co.jp/%E3%82%AD%E3%83%B3%E3%82%B0%E3%83%80%E3%83%A0-40-%E3%83%A4%E3%83%B3%E3%82%B0%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%97%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E5%8E%9F-%E6%B3%B0%E4%B9%85/dp/4088902777%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4088902777
+            </DetailPageURL>
+            <ItemLinks>
+                <ItemLink>
+                    <Description>Add To Wishlist</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/registry/wishlist/add-item.html%3Fasin.0%3D4088902777%26SubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088902777
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>Tell A Friend</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/pdp/taf/4088902777%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088902777
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Customer Reviews</Description>
+                    <URL>
+                        http://www.amazon.co.jp/review/product/4088902777%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088902777
+                    </URL>
+                </ItemLink>
+                <ItemLink>
+                    <Description>All Offers</Description>
+                    <URL>
+                        http://www.amazon.co.jp/gp/offer-listing/4088902777%3FSubscriptionId%3DAKIAIF2O5K3NZBYBHA4A%26tag%3Dtoshokan06a-22%26linkCode%3Dxm2%26camp%3D2025%26creative%3D5143%26creativeASIN%3D4088902777
+                    </URL>
+                </ItemLink>
+            </ItemLinks>
+            <SalesRank>89</SalesRank>
+            <ItemAttributes>
+                <Author>原 泰久</Author>
+                <Binding>コミック</Binding>
+                <EAN>9784088902777</EAN>
+                <EANList>
+                    <EANListElement>9784088902777</EANListElement>
+                </EANList>
+                <ISBN>4088902777</ISBN>
+                <ItemDimensions>
+                    <Height Units="hundredths-inches">87</Height>
+                    <Length Units="hundredths-inches">709</Length>
+                    <Width Units="hundredths-inches">504</Width>
+                </ItemDimensions>
+                <Label>集英社</Label>
+                <Languages>
+                    <Language>
+                        <Name>日本語</Name>
+                        <Type>Published</Type>
+                    </Language>
+                </Languages>
+                <ListPrice>
+                    <Amount>555</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 555</FormattedPrice>
+                </ListPrice>
+                <Manufacturer>集英社</Manufacturer>
+                <NumberOfPages>218</NumberOfPages>
+                <PackageDimensions>
+                    <Height Units="hundredths-inches">87</Height>
+                    <Length Units="hundredths-inches">709</Length>
+                    <Weight Units="hundredths-pounds">55</Weight>
+                    <Width Units="hundredths-inches">504</Width>
+                </PackageDimensions>
+                <ProductGroup>Book</ProductGroup>
+                <ProductTypeName>ABIS_BOOK</ProductTypeName>
+                <PublicationDate>2015-10-19</PublicationDate>
+                <Publisher>集英社</Publisher>
+                <ReleaseDate>2015-10-19</ReleaseDate>
+                <Studio>集英社</Studio>
+                <Title>キングダム 40 (ヤングジャンプコミックス)</Title>
+            </ItemAttributes>
+            <OfferSummary>
+                <LowestNewPrice>
+                    <Amount>555</Amount>
+                    <CurrencyCode>JPY</CurrencyCode>
+                    <FormattedPrice>￥ 555</FormattedPrice>
+                </LowestNewPrice>
+                <TotalNew>1</TotalNew>
+                <TotalUsed>0</TotalUsed>
+                <TotalCollectible>0</TotalCollectible>
+                <TotalRefurbished>0</TotalRefurbished>
+            </OfferSummary>
+        </Item>
+    </Items>
+</ItemSearchResponse>
