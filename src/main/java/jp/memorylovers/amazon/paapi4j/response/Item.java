@@ -12,7 +12,7 @@ public class Item {
     @Element(name = "DetailPageURL", required = false)
     public String detailPageUrl;
     @Element(name = "SalesRank", required = false)
-    public Integer salesRank;
+    public String salesRank;
     @Element(name = "ItemAttributes", required = false)
     public ItemAttributes itemAttributes;
 
