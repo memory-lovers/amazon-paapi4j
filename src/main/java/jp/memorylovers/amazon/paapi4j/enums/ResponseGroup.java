@@ -30,9 +30,11 @@ public enum ResponseGroup {
 //    REVIEWS("Reviews"),
 //    RELATED_ITEMS("RelatedItems"),
 //    SEARCH_BINS("SearchBins"),
+    SALES_RANK("SalesRank"),
 //    SIMILARITIES("Similarities"),
     /**
      * Small レスポンスグループは、商品に関する基本的な情報を返します。商品の ASIN、DetailPageURL、タイトル、商品グループ、著者などの情報です。
+     * @see <a href="https://images-na.ssl-images-amazon.com/images/G/09/associates/paapi/dg/RG_Small.html">レスポンスグループ(Small)</a>
      */
     SMALL("Small")
 //    SUBJECTS("Subjects"),

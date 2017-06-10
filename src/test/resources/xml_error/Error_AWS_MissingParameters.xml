@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="okhttp/3.8.0"></Header>
+    </HTTPHeaders>
+    <RequestId>3befdcb1-7e3b-46f8-b488-1f8c42a54dad</RequestId>
+    <Arguments>
+      <Argument Name="Condition" Value="New"></Argument>
+      <Argument Name="IdType" Value="ASIN"></Argument>
+      <Argument Name="ItemId" Value="B01MS6M6VF,B0143RT8OY"></Argument>
+      <Argument Name="Operation" Value="ItemLookup"></Argument>
+      <Argument Name="ResponseGroup" Value="Medium"></Argument>
+      <Argument Name="Service" Value="AWSECommerceService"></Argument>
+      <Argument Name="Timestamp" Value="2017-06-10T02:51:08Z"></Argument>
+      <Argument Name="Validate" Value="False"></Argument>
+      <Argument Name="Version" Value="2013-08-01"></Argument>
+    </Arguments>
+    <RequestProcessingTime>0.0011187040000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>False</IsValid>
+      <ItemLookupRequest>
+        <Condition>New</Condition>
+        <IdType>ASIN</IdType>
+        <ItemId>B01MS6M6VF</ItemId>
+        <ItemId>B0143RT8OY</ItemId>
+        <ResponseGroup>Medium</ResponseGroup>
+        <VariationPage>All</VariationPage>
+      </ItemLookupRequest>
+      <Errors>
+        <Error>
+          <Code>AWS.MissingParameters</Code>
+          <Message>Your request is missing required parameters. Required parameters include
+            AssociateTag.</Message>
+        </Error>
+      </Errors>
+    </Request>
+  </Items>
+</ItemLookupResponse>
