@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 
 import org.simpleframework.xml.core.Persister;
 
-import jp.memorylovers.amazon.paapi4j.utils.PrittyPrintUtils;
+import jp.memorylovers.pp4j.PP4j;
 
 public abstract class AbstractResponseTest {
     protected abstract String rootName();
@@ -17,7 +17,7 @@ public abstract class AbstractResponseTest {
         try (InputStreamReader ir = new InputStreamReader(new FileInputStream(new File(rootName() + fileName)))) {
             Response response = new Persister().read(Response.class, ir, false);
             assertNotNull(response);
-            if (isPrint) System.out.println(new PrittyPrintUtils().prittyPrint(response));
+            if (isPrint) System.out.println(PP4j.pp(response));
             return response;
         } catch (Exception e) {
             e.printStackTrace();

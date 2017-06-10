@@ -11,6 +11,8 @@ public class Item {
     public String asin;
     @Element(name = "DetailPageURL", required = false)
     public String detailPageUrl;
+    @Element(name = "SalesRank", required = false)
+    public Integer salesRank;
     @Element(name = "ItemAttributes", required = false)
     public ItemAttributes itemAttributes;
 
