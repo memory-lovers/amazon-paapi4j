@@ -18,6 +18,6 @@ public class Items {
     public List<Item> itemList;
 
     @Path("Request/Errors")
-    @Element(name = "Error", required = false)
-    public Error error;
+    @ElementList(entry = "Error", required = false, inline = true)
+    public List<Error> error;
 }

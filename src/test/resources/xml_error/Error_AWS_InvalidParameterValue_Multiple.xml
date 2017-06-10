@@ -1,0 +1,257 @@
+<?xml version="1.0" ?>
+<ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="okhttp/3.8.0"></Header>
+    </HTTPHeaders>
+    <RequestId>ea709a38-a516-467d-ac5c-861f2d68c82e</RequestId>
+    <Arguments>
+      <Argument Name="Condition" Value="New"></Argument>
+      <Argument Name="IdType" Value="ASIN"></Argument>
+      <Argument Name="ItemId" Value="B00O2MFWC8,B012CCL084,B01N0R1IKK,B01MS6M6VF,4422100513"></Argument>
+      <Argument Name="Operation" Value="ItemLookup"></Argument>
+      <Argument Name="ResponseGroup" Value="Medium"></Argument>
+      <Argument Name="Service" Value="AWSECommerceService"></Argument>
+      <Argument Name="Timestamp" Value="2017-06-10T12:22:50Z"></Argument>
+      <Argument Name="Validate" Value="False"></Argument>
+      <Argument Name="Version" Value="2013-08-01"></Argument>
+    </Arguments>
+    <RequestProcessingTime>0.0968650000000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>True</IsValid>
+      <ItemLookupRequest>
+        <Condition>New</Condition>
+        <IdType>ASIN</IdType>
+        <ItemId>B00O2MFWC8</ItemId>
+        <ItemId>B012CCL084</ItemId>
+        <ItemId>B01N0R1IKK</ItemId>
+        <ItemId>B01MS6M6VF</ItemId>
+        <ItemId>4422100513</ItemId>
+        <ResponseGroup>Medium</ResponseGroup>
+        <VariationPage>All</VariationPage>
+      </ItemLookupRequest>
+      <Errors>
+        <Error>
+          <Code>AWS.InvalidParameterValue</Code>
+          <Message>B012CCL084 is not a valid value for ItemId. Please change this value and retry
+            your request.
+          </Message>
+        </Error>
+        <Error>
+          <Code>AWS.InvalidParameterValue</Code>
+          <Message>B01N0R1IKK is not a valid value for ItemId. Please change this value and retry
+            your request.
+          </Message>
+        </Error>
+        <Error>
+          <Code>AWS.InvalidParameterValue</Code>
+          <Message>B00O2MFWC8 is not a valid value for ItemId. Please change this value and retry
+            your request.
+          </Message>
+        </Error>
+        <Error>
+          <Code>AWS.InvalidParameterValue</Code>
+          <Message>B01MS6M6VF is not a valid value for ItemId. Please change this value and retry
+            your request.
+          </Message>
+        </Error>
+      </Errors>
+    </Request>
+    <Item>
+      <ASIN>4422100513</ASIN>
+      <DetailPageURL>https://www.amazon.com/How-Win-Friends-Influence-People/dp/4422100513?SubscriptionId=AKIAJ274JCQO3P2UQXVQ&amp;tag=paapiuser-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4422100513
+      </DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>https://www.amazon.com/How-Win-Friends-Influence-People/dp/tech-data/4422100513?SubscriptionId=AKIAJ274JCQO3P2UQXVQ&amp;tag=paapiuser-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=4422100513
+          </URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>https://www.amazon.com/gp/registry/baby/add-item.html?asin.0=4422100513&amp;SubscriptionId=AKIAJ274JCQO3P2UQXVQ&amp;tag=paapiuser-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=4422100513
+          </URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>https://www.amazon.com/gp/registry/wedding/add-item.html?asin.0=4422100513&amp;SubscriptionId=AKIAJ274JCQO3P2UQXVQ&amp;tag=paapiuser-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=4422100513
+          </URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>https://www.amazon.com/gp/registry/wishlist/add-item.html?asin.0=4422100513&amp;SubscriptionId=AKIAJ274JCQO3P2UQXVQ&amp;tag=paapiuser-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=4422100513
+          </URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>https://www.amazon.com/gp/pdp/taf/4422100513?SubscriptionId=AKIAJ274JCQO3P2UQXVQ&amp;tag=paapiuser-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=4422100513
+          </URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>https://www.amazon.com/review/product/4422100513?SubscriptionId=AKIAJ274JCQO3P2UQXVQ&amp;tag=paapiuser-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=4422100513
+          </URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>https://www.amazon.com/gp/offer-listing/4422100513?SubscriptionId=AKIAJ274JCQO3P2UQXVQ&amp;tag=paapiuser-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=4422100513
+          </URL>
+        </ItemLink>
+      </ItemLinks>
+      <SalesRank>2122957</SalesRank>
+      <SmallImage>
+        <URL>https://images-na.ssl-images-amazon.com/images/I/41nzfdbp0IL._SL75_.jpg</URL>
+        <Height Units="pixels">75</Height>
+        <Width Units="pixels">51</Width>
+      </SmallImage>
+      <MediumImage>
+        <URL>https://images-na.ssl-images-amazon.com/images/I/41nzfdbp0IL._SL160_.jpg</URL>
+        <Height Units="pixels">160</Height>
+        <Width Units="pixels">109</Width>
+      </MediumImage>
+      <LargeImage>
+        <URL>https://images-na.ssl-images-amazon.com/images/I/41nzfdbp0IL.jpg</URL>
+        <Height Units="pixels">500</Height>
+        <Width Units="pixels">341</Width>
+      </LargeImage>
+      <ImageSets>
+        <ImageSet Category="variant">
+          <SwatchImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41zTgCPJ%2BpL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">20</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41zTgCPJ%2BpL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">49</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41zTgCPJ%2BpL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">49</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41zTgCPJ%2BpL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">72</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41zTgCPJ%2BpL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">105</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41zTgCPJ%2BpL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">329</Width>
+          </LargeImage>
+          <HiResImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/61GIXmzYiZL.jpg</URL>
+            <Height Units="pixels">1528</Height>
+            <Width Units="pixels">1005</Width>
+          </HiResImage>
+        </ImageSet>
+        <ImageSet Category="primary">
+          <SwatchImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41nzfdbp0IL._SL30_.jpg</URL>
+            <Height Units="pixels">30</Height>
+            <Width Units="pixels">20</Width>
+          </SwatchImage>
+          <SmallImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41nzfdbp0IL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">51</Width>
+          </SmallImage>
+          <ThumbnailImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41nzfdbp0IL._SL75_.jpg</URL>
+            <Height Units="pixels">75</Height>
+            <Width Units="pixels">51</Width>
+          </ThumbnailImage>
+          <TinyImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41nzfdbp0IL._SL110_.jpg</URL>
+            <Height Units="pixels">110</Height>
+            <Width Units="pixels">75</Width>
+          </TinyImage>
+          <MediumImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41nzfdbp0IL._SL160_.jpg</URL>
+            <Height Units="pixels">160</Height>
+            <Width Units="pixels">109</Width>
+          </MediumImage>
+          <LargeImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/41nzfdbp0IL.jpg</URL>
+            <Height Units="pixels">500</Height>
+            <Width Units="pixels">341</Width>
+          </LargeImage>
+          <HiResImage>
+            <URL>https://images-na.ssl-images-amazon.com/images/I/71AaRkqJI8L.jpg</URL>
+            <Height Units="pixels">1529</Height>
+            <Width Units="pixels">1042</Width>
+          </HiResImage>
+        </ImageSet>
+      </ImageSets>
+      <ItemAttributes>
+        <Author>Dale Carnegie</Author>
+        <Binding>Tankobon Hardcover</Binding>
+        <Creator Role="Translator">Hiroshi Yamaguchi</Creator>
+        <EAN>9784422100517</EAN>
+        <EANList>
+          <EANListElement>9784422100517</EANListElement>
+        </EANList>
+        <IsAdultProduct>0</IsAdultProduct>
+        <ISBN>4422100513</ISBN>
+        <Label>Sogensha</Label>
+        <Languages>
+          <Language>
+            <Name>Japanese</Name>
+            <Type>Published</Type>
+          </Language>
+          <Language>
+            <Name>Japanese</Name>
+            <Type>Unknown</Type>
+          </Language>
+        </Languages>
+        <Manufacturer>Sogensha</Manufacturer>
+        <NumberOfPages>346</NumberOfPages>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">110</Height>
+          <Length Units="hundredths-inches">748</Length>
+          <Weight Units="hundredths-pounds">101</Weight>
+          <Width Units="hundredths-inches">528</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <ProductGroup>Book</ProductGroup>
+        <ProductTypeName>ABIS_BOOK</ProductTypeName>
+        <PublicationDate>1999</PublicationDate>
+        <Publisher>Sogensha</Publisher>
+        <Studio>Sogensha</Studio>
+        <Title>How to Win Friends and Influence People</Title>
+      </ItemAttributes>
+      <OfferSummary>
+        <LowestNewPrice>
+          <Amount>1883</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$18.83</FormattedPrice>
+        </LowestNewPrice>
+        <LowestUsedPrice>
+          <Amount>1066</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$10.66</FormattedPrice>
+        </LowestUsedPrice>
+        <TotalNew>31</TotalNew>
+        <TotalUsed>10</TotalUsed>
+        <TotalCollectible>0</TotalCollectible>
+        <TotalRefurbished>0</TotalRefurbished>
+      </OfferSummary>
+      <EditorialReviews>
+        <EditorialReview>
+          <Source>Product Description</Source>
+          <Content>written in JAPANESE</Content>
+          <IsLinkSuppressed>0</IsLinkSuppressed>
+        </EditorialReview>
+      </EditorialReviews>
+    </Item>
+  </Items>
+</ItemLookupResponse>
