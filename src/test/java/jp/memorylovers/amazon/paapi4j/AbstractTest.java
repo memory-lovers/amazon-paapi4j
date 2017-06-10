@@ -8,6 +8,7 @@ import jp.memorylovers.amazon.paapi4j.exception.PAAPI4jException;
 import jp.memorylovers.amazon.paapi4j.request.Request;
 import jp.memorylovers.amazon.paapi4j.request.sign.AuthInfo;
 import jp.memorylovers.amazon.paapi4j.request.sign.AuthInfoFactory;
+import jp.memorylovers.amazon.paapi4j.response.DumpFileResponseHelper;
 import jp.memorylovers.amazon.paapi4j.response.Response;
 
 public class AbstractTest {
@@ -32,7 +33,7 @@ public class AbstractTest {
     public Response getResponse(Request request) {
         Response response = null;
         try {
-            response = new DebugResponseHelper().getResponse(request);
+            response = new DumpFileResponseHelper().getResponse(request);
             response.setRequest(request);
             System.out.println(response.toString());
         } catch (Exception e) {

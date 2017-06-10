@@ -1,4 +1,4 @@
-package jp.memorylovers.amazon.paapi4j;
+package jp.memorylovers.amazon.paapi4j.response;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,11 +9,9 @@ import org.simpleframework.xml.core.Persister;
 
 import jp.memorylovers.amazon.paapi4j.request.RequestItemLookup;
 import jp.memorylovers.amazon.paapi4j.request.RequestItemSearch;
-import jp.memorylovers.amazon.paapi4j.response.Response;
-import jp.memorylovers.amazon.paapi4j.response.ResponseHelper;
 import jp.memorylovers.amazon.paapi4j.utils.Utils;
 
-public class DebugResponseHelper extends ResponseHelper {
+public class DumpFileResponseHelper extends ResponseHelper {
     private static final String OUTPUT_DIR = "out";
 
     public Response deserializeFromFile(String filePath) throws Exception {
