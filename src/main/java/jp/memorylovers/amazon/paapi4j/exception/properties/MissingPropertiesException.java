@@ -1,4 +1,6 @@
-package jp.memorylovers.amazon.paapi4j.exception;
+package jp.memorylovers.amazon.paapi4j.exception.properties;
+
+import jp.memorylovers.amazon.paapi4j.exception.PAAPI4jException;
 
 public class MissingPropertiesException extends PAAPI4jException {
 

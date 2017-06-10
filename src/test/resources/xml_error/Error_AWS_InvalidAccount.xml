@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ItemLookupErrorResponse xmlns="http://ecs.amazonaws.com/doc/2013-08-01/">
+  <Error>
+    <Code>AWS.InvalidAccount</Code>
+    <Message>Your AccessKey Id is not registered for Product Advertising API. Please use the
+      AccessKey Id obtained after registering at
+      https://affiliate-program.amazon.com/gp/flex/advertising/api/sign-in.html.</Message>
+  </Error>
+  <RequestID>51446a98-a984-4d15-884a-664fcb97327f</RequestID>
+</ItemLookupErrorResponse>

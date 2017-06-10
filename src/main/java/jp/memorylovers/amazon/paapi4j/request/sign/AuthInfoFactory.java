@@ -3,9 +3,9 @@ package jp.memorylovers.amazon.paapi4j.request.sign;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-import jp.memorylovers.amazon.paapi4j.exception.IllegalPropertiesException;
-import jp.memorylovers.amazon.paapi4j.exception.MissingPropertiesException;
 import jp.memorylovers.amazon.paapi4j.exception.PAAPI4jException;
+import jp.memorylovers.amazon.paapi4j.exception.properties.IllegalPropertiesException;
+import jp.memorylovers.amazon.paapi4j.exception.properties.MissingPropertiesException;
 
 /**
  * this is Factory class for AuthInfo.

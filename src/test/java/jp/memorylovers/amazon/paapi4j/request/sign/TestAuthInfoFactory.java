@@ -4,9 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import jp.memorylovers.amazon.paapi4j.exception.IllegalPropertiesException;
-import jp.memorylovers.amazon.paapi4j.exception.MissingPropertiesException;
 import jp.memorylovers.amazon.paapi4j.exception.PAAPI4jException;
+import jp.memorylovers.amazon.paapi4j.exception.properties.IllegalPropertiesException;
+import jp.memorylovers.amazon.paapi4j.exception.properties.MissingPropertiesException;
 import jp.memorylovers.pp4j.PP4j;
 
 public class TestAuthInfoFactory {

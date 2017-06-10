@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ItemLookupErrorResponse xmlns="http://ecs.amazonaws.com/doc/2013-08-01/">
+  <Error>
+    <Code>AWS.InvalidAssociate</Code>
+    <Message>Your XXXXXXXXXXX is not registered as an Amazon Associate.Please register as an
+      associate at https://affiliate-program.amazon.com/gp/associates/join/landing/main.html.
+    </Message>
+  </Error>
+  <RequestID>68e705c8-d487-46d6-8aab-25b6f889db94</RequestID>
+</ItemLookupErrorResponse>
