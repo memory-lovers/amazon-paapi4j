@@ -42,7 +42,7 @@ public class RequestItemLookup extends Request {
     }
 
     protected RequestItemLookup(EndPoint endPoint, AuthInfo authInfo) {
-        super(authInfo);
+        super(endPoint, authInfo);
     }
 
     public static RequestItemLookup.Builder builder(AuthInfo authInfo) {
