@@ -7,12 +7,17 @@ import jp.memorylovers.amazon.paapi4j.enums.EndPoint;
 import jp.memorylovers.amazon.paapi4j.enums.ResponseGroup;
 import jp.memorylovers.amazon.paapi4j.request.sign.AuthInfo;
 import lombok.Getter;
+import lombok.Setter;
 
 /**
  * PAAPI Request parameters for ItemSearch operation<br>
- * Unsupported for 'Actor', 'Artist', 'AudienceRating', 'Brand', 'City', 'Composer', 'Conductor', 'Director', 'MusicLabel', 'Neighborhood', 'Orchestra', 'TextStream'
+ * Unsupported for 'Actor', 'Artist', 'AudienceRating', 'Brand', 'City',
+ * 'Composer', 'Conductor', 'Director', 'MusicLabel', 'Neighborhood',
+ * 'Orchestra', 'TextStream'
  *
- * @see <a href="https://images-na.ssl-images-amazon.com/images/G/09/associates/paapi/dg/ItemSearch.html">ItemSearch</a>
+ * @see <a href=
+ *      "https://images-na.ssl-images-amazon.com/images/G/09/associates/paapi/dg/ItemSearch.html">
+ *      ItemSearch</a>
  */
 @Getter
 public class RequestItemSearch extends Request {
@@ -20,6 +25,7 @@ public class RequestItemSearch extends Request {
     private Long browseNode = null;
     private Condition condition = Condition.NEW;
     private ResponseGroup responseGroup = ResponseGroup.SMALL;
+    @Setter
     private Integer itemPage = null;
     private String power = null;
     private String publisher = null;
@@ -28,7 +34,7 @@ public class RequestItemSearch extends Request {
     private Integer maximumPrice = null;
     private Integer minimumPrice = null;
 
-    private String searchIndex = "Books";
+    private String searchIndex = "All";
     private Integer variationPage = null;
 
     protected RequestItemSearch(AuthInfo authInfo) {
@@ -43,7 +49,8 @@ public class RequestItemSearch extends Request {
         return new Builder(authInfo);
     }
 
-    public static RequestItemSearch.Builder builder(EndPoint endPoint, AuthInfo authInfo) {
+    public static RequestItemSearch.Builder builder(EndPoint endPoint,
+                                                    AuthInfo authInfo) {
         return new Builder(endPoint, authInfo);
     }
 
@@ -58,11 +65,14 @@ public class RequestItemSearch extends Request {
         if (publisher != null) params.put("Publisher", publisher);
 
         if (keywords != null) params.put("Keywords", enc(keywords));
-        if (maximumPrice != null) params.put("MaximumPrice", maximumPrice.toString());
-        if (minimumPrice != null) params.put("MinimumPrice", minimumPrice.toString());
+        if (maximumPrice != null) params.put(
+            "MaximumPrice", maximumPrice.toString());
+        if (minimumPrice != null) params.put(
+            "MinimumPrice", minimumPrice.toString());
 
         if (searchIndex != null) params.put("SearchIndex", searchIndex);
-        if (variationPage != null) params.put("VariationPage", variationPage.toString());
+        if (variationPage != null) params.put(
+            "VariationPage", variationPage.toString());
 
         return params;
     }
@@ -152,8 +162,7 @@ public class RequestItemSearch extends Request {
             return this;
         }
 
-
-        //for Request
+        // for Request
         public Builder merchantId(String merchantId) {
             this.request.merchantId = merchantId;
             return this;
