@@ -1,5 +1,6 @@
 package jp.memorylovers.amazon.paapi4j.request;
 
+import java.util.Arrays;
 import java.util.Map;
 
 import jp.memorylovers.amazon.paapi4j.enums.Condition;
@@ -35,7 +36,9 @@ public class RequestItemLookup extends Request {
     private IdType idType = IdType.ASIN;
     private String[] itemId = {};
     private Integer offerPage = null;
-    private ResponseGroup responseGroup = ResponseGroup.MEDIUM;
+    private ResponseGroup[] responseGroups = new ResponseGroup[] {
+        ResponseGroup.MEDIUM
+    };
 
     protected RequestItemLookup(AuthInfo authInfo) {
         super(authInfo);
@@ -49,7 +52,8 @@ public class RequestItemLookup extends Request {
         return new Builder(authInfo);
     }
 
-    public static RequestItemLookup.Builder builder(EndPoint endPoint, AuthInfo authInfo) {
+    public static RequestItemLookup.Builder builder(EndPoint endPoint,
+                                                    AuthInfo authInfo) {
         return new Builder(endPoint, authInfo);
     }
 
@@ -59,7 +63,10 @@ public class RequestItemLookup extends Request {
         params.put("IdType", idType.toString());
         params.put("ItemId", String.join(",", itemId));
         if (offerPage != null) params.put("OfferPage", offerPage.toString());
-        params.put("ResponseGroup", responseGroup.toString());
+        String[] rgs = Arrays.stream(responseGroups)
+            .map(Object::toString)
+            .toArray(String[]::new);
+        params.put("ResponseGroup", String.join(",", rgs));
         return params;
     }
 
@@ -103,12 +110,12 @@ public class RequestItemLookup extends Request {
             return this;
         }
 
-        public Builder responseGroup(ResponseGroup responseGroup) {
-            this.request.responseGroup = responseGroup;
+        public Builder responseGroup(ResponseGroup... responseGroups) {
+            this.request.responseGroups = responseGroups;
             return this;
         }
 
-        //for Request
+        // for Request
         public Builder merchantId(String merchantId) {
             this.request.merchantId = merchantId;
             return this;

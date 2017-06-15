@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
+import java.util.Arrays;
 
 import org.simpleframework.xml.core.Persister;
 
@@ -38,8 +39,12 @@ public class DumpFileResponseHelper extends ResponseHelper {
         sb.append("_");
 
         if (request instanceof RequestItemLookup) {
-            sb.append(((RequestItemLookup) request).getResponseGroup());
-            sb.append("_");
+            Arrays.stream(((RequestItemLookup) request).getResponseGroups())
+                .forEach(rg -> {
+                    sb.append(rg.toString());
+                    sb.append("_");
+                });
+
         } else if (request instanceof RequestItemSearch) {
             sb.append(((RequestItemSearch) request).getResponseGroup());
             sb.append("_");
