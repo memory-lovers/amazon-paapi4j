@@ -42,8 +42,8 @@ public class DumpFileResponseHelper extends ResponseHelper {
         if (request instanceof RequestItemLookup) {
             Arrays.stream(((RequestItemLookup) request).getResponseGroups())
                 .forEach(rg -> {
-                    sb.append(rg.toString());
                     sb.append("_");
+                    sb.append(rg.toString());
                 });
 
         } else if (request instanceof RequestItemSearch) {
