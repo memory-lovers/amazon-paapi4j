@@ -36,6 +36,7 @@ public class RequestItemLookup extends Request {
     private IdType idType = IdType.ASIN;
     private String[] itemId = {};
     private Integer offerPage = null;
+    private String searchIndex = "All";
     private ResponseGroup[] responseGroups = new ResponseGroup[] {
         ResponseGroup.MEDIUM
     };
@@ -63,6 +64,7 @@ public class RequestItemLookup extends Request {
         params.put("IdType", idType.toString());
         params.put("ItemId", String.join(",", itemId));
         if (offerPage != null) params.put("OfferPage", offerPage.toString());
+        if (searchIndex != null) params.put("SearchIndex", searchIndex);
         String[] rgs = Arrays.stream(responseGroups)
             .map(Object::toString)
             .toArray(String[]::new);
@@ -107,6 +109,11 @@ public class RequestItemLookup extends Request {
 
         public Builder offerPage(Integer offerPage) {
             this.request.offerPage = offerPage;
+            return this;
+        }
+
+        public Builder searchIndex(String searchIndex) {
+            this.request.searchIndex = searchIndex;
             return this;
         }
 

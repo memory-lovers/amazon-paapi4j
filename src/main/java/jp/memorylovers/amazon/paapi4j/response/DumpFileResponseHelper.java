@@ -35,8 +35,9 @@ public class DumpFileResponseHelper extends ResponseHelper {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append(request.operation());
+        sb.append(Utils.getCurDateTIme());
         sb.append("_");
+        sb.append(request.operation());
 
         if (request instanceof RequestItemLookup) {
             Arrays.stream(((RequestItemLookup) request).getResponseGroups())
@@ -46,11 +47,12 @@ public class DumpFileResponseHelper extends ResponseHelper {
                 });
 
         } else if (request instanceof RequestItemSearch) {
-            sb.append(((RequestItemSearch) request).getResponseGroup());
-            sb.append("_");
+            Arrays.stream(((RequestItemSearch) request).getResponseGroups())
+                .forEach(rg -> {
+                    sb.append("_");
+                    sb.append(rg.toString());
+                });
         }
-
-        sb.append(Utils.getCurDateTIme());
         sb.append(".xml");
 
         File outFile = new File(outDir, sb.toString());

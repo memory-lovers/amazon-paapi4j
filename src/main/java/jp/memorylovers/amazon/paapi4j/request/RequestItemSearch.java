@@ -1,5 +1,6 @@
 package jp.memorylovers.amazon.paapi4j.request;
 
+import java.util.Arrays;
 import java.util.Map;
 
 import jp.memorylovers.amazon.paapi4j.enums.Condition;
@@ -24,7 +25,9 @@ public class RequestItemSearch extends Request {
     private String author = null;
     private Long browseNode = null;
     private Condition condition = Condition.NEW;
-    private ResponseGroup responseGroup = ResponseGroup.SMALL;
+    private ResponseGroup[] responseGroups = new ResponseGroup[] {
+        ResponseGroup.SMALL
+    };
     @Setter
     private Integer itemPage = null;
     private String power = null;
@@ -59,7 +62,10 @@ public class RequestItemSearch extends Request {
         if (author != null) params.put("Author", author);
         if (browseNode != null) params.put("BrowseNode", browseNode.toString());
         params.put("Condition", condition.toString());
-        params.put("ResponseGroup", responseGroup.toString());
+        String[] rgs = Arrays.stream(responseGroups)
+            .map(Object::toString)
+            .toArray(String[]::new);
+        params.put("ResponseGroup", String.join(",", rgs));
         if (itemPage != null) params.put("ItemPage", itemPage.toString());
         if (power != null) params.put("Power", power);
         if (publisher != null) params.put("Publisher", publisher);
@@ -112,8 +118,8 @@ public class RequestItemSearch extends Request {
             return this;
         }
 
-        public Builder responseGroup(ResponseGroup responseGroup) {
-            this.request.responseGroup = responseGroup;
+        public Builder responseGroup(ResponseGroup... responseGroups) {
+            this.request.responseGroups = responseGroups;
             return this;
         }
 
