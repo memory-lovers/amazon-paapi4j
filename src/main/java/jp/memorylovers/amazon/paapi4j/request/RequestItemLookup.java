@@ -36,7 +36,7 @@ public class RequestItemLookup extends Request {
     private IdType idType = IdType.ASIN;
     private String[] itemId = {};
     private Integer offerPage = null;
-    private String searchIndex = "All";
+    private String searchIndex = null;
     private ResponseGroup[] responseGroups = new ResponseGroup[] {
         ResponseGroup.MEDIUM
     };
