@@ -45,6 +45,9 @@ public class Item {
     @Element(name = "LowestUsedPrice", required = false)
     public Price lowestUsedPrice;
 
+    @Element(name = "Offers", required = false)
+    public Offers offers;
+
     @Path("BrowseNodes")
     @ElementList(entry = "BrowseNode", required = false, inline = true)
     public List<BrowseNode> browseNodes;

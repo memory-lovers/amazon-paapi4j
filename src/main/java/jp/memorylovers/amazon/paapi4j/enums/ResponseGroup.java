@@ -24,7 +24,7 @@ public enum ResponseGroup {
      */
     MEDIUM("Medium"),
     //    MERCHANT_ITEM_ATTRIBUTES("MerchantItemAttributes"),
-//    OFFER_FULL("OfferFull"),
+    OFFER_FULL("OfferFull"),
 //    OFFERS("OfferSummary"),
 //    OFFER_SUMMARY("Reviews"),
 //    REVIEWS("Reviews"),
